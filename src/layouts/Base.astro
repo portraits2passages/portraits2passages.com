@@ -38,7 +38,7 @@ const actif = (href: string) => href === '/' ? Astro.url.pathname === '/' : Astr
 <body>
   <header class="entete">
     <div class="conteneur entete-in">
-      <a href="/" class="logo"><img src="/images/logop2p-bicolor.png" alt={site.nom} width="180" height="54" /></a>
+      <a href="/" class="logo"><img src="/images/logop2p-bicolor.png" alt="" width="48" height="48" /><span>{site.nom}</span></a>
       <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menu" />
       <label for="menu-toggle" class="menu-bouton" aria-hidden="true">☰</label>
       <nav aria-label="Menu principal">

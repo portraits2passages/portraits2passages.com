@@ -121,3 +121,5 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); }
   .reponse { display: none !important; }
   .defi { break-inside: avoid; }
 }
+.logo { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-family: var(--titres); font-weight: 700; color: var(--secondaire); font-size: 1.15rem; }
+.logo img { height: 40px; width: auto; }
