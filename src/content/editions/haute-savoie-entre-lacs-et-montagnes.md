@@ -1,0 +1,48 @@
+---
+titre: "Haute-Savoie : entre lacs et montagnes"
+date: 2022-07-01
+description: "Première édition dans les Alpes ! C'est au tour de deux grands timides, Emmanuel et Romain, de partir à l'aventure dans ce territoire très touristique de..."
+chapo: "Première édition dans les Alpes ! C'est au tour de deux grands timides, Emmanuel et Romain, de partir à l'aventure dans ce territoire très touristique de la Haute-Savoie."
+couverture: "/images/miniature-p2p-004-1.jpg"
+youtube: "lHQJWM0SzBY"
+carte: "https://umap.openstreetmap.fr/fr/map/p2p-004-haute-savoie_1423419"
+carteTexte: "Les mots et les images racontent l'émotion, mais la géographie raconte l'effort. Pour visualiser l'ampleur du périple et des détours découvrez la trace exacte de leur itinéraire ainsi que la localisation des défis."
+defis:
+  - nom: "L’yvoire"
+    question: "Vous souhaitez éveiller vos cinq sens ? Rendez vous dans cette magnifique oeuvre vivante."
+    reponse: "Le Jardin des 5 sens à Yvoire."
+  - nom: "La Sainte-Claire"
+    question: "C’est au pays de la truite qu’il vous faudra retrouver les traces de l'ancêtre de l’Académie Française."
+    reponse: "L’Académie florimontane, ancêtre de l'Académie Française, anciennement Société florimontane, est une société savante fondée en 1606-1607 à Annecy. Cette société savante a pour objectif d’encourager toute activité théologique, philosophique, scientifique et littéraire, en rassemblant des académiciens dans l'Hôtel Bagnoréa situé rue Sainte-Claire à Annecy."
+  - nom: "L’abîme"
+    question: "À cheval au dessus du Chéran, à 96 m de hauteur, c’est le lieu de passage de nombreuses randonnées."
+    reponse: "Le pont de l'Abîme est un pont suspendu dans le département de la Haute-Savoie. Cet ouvrage d'art permet à la route départementale 31 reliant directement les communes de Cusy et de Gruffy de franchir le Chéran à sa sortie de la cluse de Bange à une hauteur (tirant d'air) de 96 mètres."
+  - nom: "La devémy"
+    question: "Au bout des sculptures, se trouve une bâtisse hors du commun, où religion et art moderne ont sû trouver un terrain d’entente."
+    reponse: "L'église Notre-Dame de Toute Grâce fondée par le chanoine Devémy, doit sa réputation aux nombreux artistes de renom ayant participé à sa décoration. Ces derniers bien que de religions, d'opinions et de styles divers ont laissé une œuvre unique."
+  - nom: "La cachat"
+    question: "Cette source miraculeuse a soigné l’artistocrate Jean Charles de Laizer de ses calculs urinaires."
+    reponse: "La source Cachat à Evian-les-bains."
+  - nom: "La ripaille"
+    question: "Cette bâtisse a 3000 ans, oui 3000 ans! C’est un lieu magnifique, au bord du lac Léman, connu pour son caractère historique, sa nature et son vin."
+    reponse: "Le chateau de Ripaille, Domaine de Ripaille, Thonon-les-Bains."
+  - nom: "La tour"
+    question: "Les comtes de Genève y avaient dressé leur château… dont il ne reste plus que cette tour !"
+    reponse: "La Tour des comtes de Genève. La Roche-sur-Foron."
+  - nom: "La fontaine"
+    question: "Centre de la région historique de l’Albanais, cette ville possède de nombreuses fontaines remarquables ! Trouve au moins 4 d’entres-elles."
+    reponse: "À Rumilly, 4 fontaines sont réparties dans la ville."
+  - nom: "La lagune"
+    question: "Cette journée est sublimée par ses lacs… Trouves en le plus possible."
+    reponse: "Voici quelques uns des nombreux lacs en Haute-Savoie : • lac d'Annecy • lac Léman • lac de la Balme-de-Sillingy • lacs aux dames • lac de Gers • lac de roy • lac bleu • lac d'Anterne"
+  - nom: "La sommeiller"
+    question: "Il a participé à la construction du tunnel de Mont-Cenis, premier grand tunnel de montagne. Une de ses statues se trouve dans son village, trouve là !"
+    reponse: "À Saint-Jeoire, il y a le monument à Germain Sommeiller."
+  - nom: "La Bianco"
+    question: "Il a presque toujours la tête dans les nuages mais ne se déplace jamais sans son Goûter."
+    reponse: "Le Mont-Blanc."
+---
+
+Cette fois, nous plongeons dans la nature sauvage savoyarde avec Emmanuel, l’enseignant, et Romain, l’étudiant. Pour cette édition, ils auront l’occasion de découvrir un département qui allie sport et nature : la Haute-Savoie ! Cap sur les sommets pour cette aventure.
+
+Les deux binômes sont partis de Chambéry le vendredi 1er juillet à 8h du matin et sont revenus le samedi 2 juillet au soir, uniquement en autostop.

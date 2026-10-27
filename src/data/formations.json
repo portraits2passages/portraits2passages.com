@@ -1,0 +1,14 @@
+{
+  "themes": [
+    { "titre": "Systèmes Terre", "image": "/images/img-11008.jpg", "intro": "Compréhension des équilibres du Système Terre et des besoins humains :", "points": ["Frontières planétaires", "Économie du Donut", "Gestion des communs"] },
+    { "titre": "Numérique responsable", "image": "/images/img-4980917.jpg", "intro": "Conception et développements de services numériques responsables :", "points": ["Green IT vs IT for Green", "Paradigme cornucopien", "Sustainable Computing Environmental Framework", "Communs numériques"] },
+    { "titre": "Sécurité informatique", "image": "/images/img-1591018.jpg", "intro": "Conception et utilisation d'outils numériques sûrs et fiables :", "points": ["Bases des principes de sécurité informatique", "Fonctionnement du web sécurisé", "Gestion des dépendances numériques et physiques"] }
+  ],
+  "interets": [
+    "Contexte du numérique (Système Terre, Communs numériques, Techno-diversité)",
+    "Green IT (définir et réduire l'impact du numérique)",
+    "Dépendances et vulnérabilités du numérique",
+    "Numérique responsable (concevoir démocratiquement dans les limites planétaires)",
+    "Bases de la sécurité numérique"
+  ]
+}

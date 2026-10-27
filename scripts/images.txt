@@ -1,0 +1,10 @@
+data/files/miniature-006-04.jpg
+data/files/miniature-p2p-001.jpg
+data/files/miniature-p2p-002.jpg
+data/files/miniature-p2p-004-1.jpg
+data/files/miniature-p2p008b.jpg
+data/files/miniature.jpg
+data/files/miniature.png
+data/files/miniature_p2p_005_haute-saone_v2.jpg
+data/files/miniaturep2p-003-1.jpg
+data/files/miniaturep2p009.jpg

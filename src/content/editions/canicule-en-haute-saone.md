@@ -1,0 +1,45 @@
+---
+titre: "Canicule en Haute-Saône"
+date: 2022-07-18
+description: "Juillet 2022 : bravant la canicule, nos participants s'élancent à la découverte du territoire haute-saônois ! De belles rencontres les attendent, marquées..."
+chapo: "Juillet 2022 : bravant la canicule, nos participants s'élancent à la découverte du territoire haute-saônois ! De belles rencontres les attendent, marquées par le partage et la découverte du terroir incontournable de la région. Cerise sur le gâteau : un petit kirsch de Fougerolles ?"
+couverture: "/images/miniature_p2p_005_haute-saone_v2.jpg"
+youtube: "EXLRsaITrt8"
+carte: "https://umap.openstreetmap.fr/fr/map/p2p-005-haute-saone_1423422"
+carteTexte: "Les mots et les images racontent l'émotion, mais la géographie raconte l'effort. Pour visualiser l'ampleur du périple et des détours découvrez la trace exacte de leur itinéraire ainsi que la localisation des défis."
+defis:
+  - nom: "La saut"
+    question: "Elle mesure 13 mètres de haut et se situe sur la commune de Servance. Mais où ?"
+    reponse: "Cascade de la Doue de l’eau (Servance-Miellin, cascade Ognon)."
+  - nom: "La corbusier"
+    question: "C’est un site un peu spécial où se trouvent, entre autres, des chapelles, un couvant, et une pyramide de paix. Trouve cet endroit."
+    reponse: "La chapelle Notre-Dame du Haut est une chapelle catholique construite de 1953 à 1955 sur la colline de Bourlémont à Ronchamp en Haute-Saône."
+  - nom: "L'architecte"
+    question: "En te baladant dans Luxeuil-les-Bains, tu devras trouver le plus bel hôtel particulier de la ville."
+    reponse: "La ville de Luxeuil-lès-bains bénéficie d’un patrimoine remarque. L’office de toursime propose un sentier du patrimoine qui se déroule dans toute la ville autour de 14 étapes. Vous pourrez découvrir les monuments emblématiques de Luxeuil-les-Bains dont certains font partie des 17 sites classés au titre des monuments historiques. Quelques exemples : • Maison du Cardinal Jouffroy • Maison François 1er • Maison du Bailli – Hôtel Thiadot • La tour des échevins"
+  - nom: "La vergy"
+    question: "Ce château médiéval néoclassique a subi de nombreux incendies… Mais il a toujours été rénové ! Il abrite actuellement un musée. Lequel ?"
+    reponse: "Le château de Champlitte est un bâtiment construit au XVIIIe siècle dans la commune française de Champlitte, dans la Haute-Saône. Il abrite actuellement le Musée départemental d’Arts et Traditions populaires."
+  - nom: "La murale"
+    question: "Dans le Port du département, se situe la fresque des droits de l’homme."
+    reponse: "Port-sur-Saône. La fresque des droits de l’homme, réalisée en novembre 1990 est située sur la place de l’église."
+  - nom: "La planey"
+    question: "Pour résoudre ce challenge, tu devras te rendre dans une petite forêt et parcourir environ 500m. Tu y trouveras un lieu familial avec cette magnifique source."
+    reponse: "Source du Planey, D148, 70800 Anjeux, France (résurgence)"
+  - nom: "La cerise"
+    question: "Une énorme cerise se trouve dans le département, à l’entrée d’un village… Trouve la et comprends pourquoi elle a été érigée à cet endroit."
+    reponse: "Fougerolles-Saint-Valbert est connue pour son économie gastronomique liée aux cerises notamment utilisées pour la fabrication du kirsch de Fougerolles et de griottines."
+  - nom: "La vierge"
+    question: "Elle est l’emblème de la ville et permet une vue panoramique sur la vallée du Durgeon."
+    reponse: "La chapelle Notre-Dame-de-la-Motte, ou simplement appelée chapelle de la Motte, est une chapelle dédiée à la vierge Marie, érigée au sommet de la colline de La Motte au centre de Vesoul, dans la Haute-Saône. C’est un monument historique de la ville qui fait partie du patrimoine de Vesoul."
+  - nom: "L'officielle"
+    question: "Ce bâtiment de la renaissance est orné d’un toit typiquement bourguignon et de colonnes Corinthiennes."
+    reponse: "L’Hotel de ville de Gray-sur-Saône est l’un des plus prestigieux édifices de la Renaissance en Franche-Comté."
+  - nom: "La sucrée"
+    question: "Le long de l’Ognon, biscuits et charlottes sont les spécialités de fin de repas. Rends-toi dans le village possédant ces deux spécialités."
+    reponse: "Le biscuit de Montbozon est une spécialité de pâtisserie du village haut-saônois de Montbozon."
+---
+
+C’est au tour de Jean-Yves et Axel de braver la canicule et de se lancer dans l’aventure P2P. Pour cette édition, ils s’immergent dans l’accent franc-comtois, à la découverte du patrimoine de la Haute-Saône ! Vesoul, Gray, Luxeuil en passant par le plateau des milles étangs, les territoires n’auront plus de secret pour eux.
+
+Les deux binômes ont quitté Dijon à 8h le lundi 18 juillet et sont rentrés le 19 juillet au soir, uniquement en auto-stop.

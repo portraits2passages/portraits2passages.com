@@ -1,0 +1,21 @@
+---
+import site from '../data/site.json';
+interface Props { sujet: string; interets?: string[]; objet?: boolean; }
+const { sujet, interets, objet = false } = Astro.props;
+---
+<form class="formulaire" action={site.formulaireAction} method="POST">
+  <input type="hidden" name="_subject" value={sujet} />
+  <label>Nom complet<input name="nom" required autocomplete="name" /></label>
+  <label>E-mail<input type="email" name="email" required autocomplete="email" /></label>
+  {objet && <label>Objet<input name="objet" /></label>}
+  {interets && (
+    <fieldset>
+      <legend>Vos intérêts pour nos formations</legend>
+      {interets.map(i => <label class="case"><input type="checkbox" name="interets" value={i} /> {i}</label>)}
+    </fieldset>
+  )}
+  <label>Message<textarea name="message" rows="6" required></textarea></label>
+  <!-- Piège à robots (honeypot) à la place du captcha -->
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="cache" aria-hidden="true" />
+  <button type="submit" class="bouton">Envoyer le message</button>
+</form>

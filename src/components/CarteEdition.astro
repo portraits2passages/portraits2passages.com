@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props { edition: CollectionEntry<'editions'>; }
+const { edition } = Astro.props;
+---
+<article class="carte-edition">
+  <a href={`/editions/${edition.id}`}>
+    <img src={edition.data.couverture} alt="" loading="lazy" width="640" height="360" />
+    <div class="carte-edition-texte">
+      <h3>{edition.data.titre}</h3>
+      <p>{edition.data.description}</p>
+    </div>
+  </a>
+</article>

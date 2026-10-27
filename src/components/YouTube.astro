@@ -1,0 +1,18 @@
+---
+// Façade « cliquer pour lire » : rien n'est chargé depuis YouTube avant le clic, donc pas de bandeau cookies nécessaire.
+interface Props { id: string; titre: string; }
+const { id, titre } = Astro.props;
+---
+<div class="video" data-id={id}>
+  <button type="button" aria-label={`Lire la vidéo : ${titre}`} style={`background-image:url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)`}>
+    <span class="video-play" aria-hidden="true">▶</span>
+  </button>
+  <p class="video-note">La vidéo est hébergée par YouTube et ne se charge qu'au clic.</p>
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>('.video').forEach(el => {
+    el.querySelector('button')?.addEventListener('click', () => {
+      el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${el.dataset.id}?autoplay=1" title="Vidéo" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+    });
+  });
+</script>

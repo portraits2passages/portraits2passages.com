@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import Formulaire from '../components/Formulaire.astro';
+import site from '../data/site.json';
+---
+<Base titre="Contact" description="Contactez l'équipe Portraits 2 Passages : participation à une édition, formation, partenariat ou simple question.">
+  <section class="conteneur etroit section">
+    <h1>Contact</h1>
+    <p>Écrivez-nous via le formulaire ci-dessous ou directement à <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+    <Formulaire sujet="Contact depuis le site" objet />
+  </section>
+</Base>

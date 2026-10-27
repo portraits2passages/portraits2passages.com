@@ -1,0 +1,13 @@
+{
+  "nom": "Portraits 2 Passages",
+  "slogan": "Récits de voyage et formations engagées",
+  "description": "Explorez des territoires méconnus à travers des aventures humaines uniques. Découvrez nos récits de voyage et nos formations pour un numérique sûr et responsable.",
+  "email": "contact@portraits2passages.com",
+  "reseaux": [
+    { "nom": "Instagram", "url": "https://instagram.com/portraits2passages" },
+    { "nom": "Facebook", "url": "https://www.facebook.com/portraits2passages" },
+    { "nom": "YouTube", "url": "https://www.youtube.com/@portraits2passages" },
+    { "nom": "LinkedIn", "url": "https://linkedin.com/company/portraits-2-passages" }
+  ],
+  "formulaireAction": "https://formspree.io/f/A_CONFIGURER"
+}

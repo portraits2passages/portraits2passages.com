@@ -1,0 +1,74 @@
+---
+import site from '../data/site.json';
+import '../styles/global.css';
+
+interface Props { titre?: string; description?: string; image?: string; }
+const { titre, description = site.description, image = '/images/miniature.png' } = Astro.props;
+const titreComplet = titre ? `${titre} — ${site.slogan} | ${site.nom}` : `${site.slogan} | ${site.nom}`;
+const canonical = new URL(Astro.url.pathname.replace(/\.html$/, ''), Astro.site);
+const imageAbs = new URL(image, Astro.site);
+const nav = [
+  { href: '/', label: 'Accueil' },
+  { href: '/editions', label: 'Éditions' },
+  { href: '/formations', label: 'Formations' },
+  { href: '/contact', label: 'Contact' },
+];
+const actif = (href: string) => href === '/' ? Astro.url.pathname === '/' : Astro.url.pathname.startsWith(href);
+---
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{titreComplet}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content={site.nom} />
+  <meta property="og:title" content={titre ?? site.nom} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={imageAbs} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/images/logop2p-bicolor.png" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=poppins:500,600,700|roboto:400,500&display=swap" />
+  <slot name="head" />
+</head>
+<body>
+  <header class="entete">
+    <div class="conteneur entete-in">
+      <a href="/" class="logo"><img src="/images/logop2p-bicolor.png" alt={site.nom} width="180" height="54" /></a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menu" />
+      <label for="menu-toggle" class="menu-bouton" aria-hidden="true">☰</label>
+      <nav aria-label="Menu principal">
+        <ul>
+          {nav.map(l => <li><a href={l.href} aria-current={actif(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main><slot /></main>
+  <footer class="pied">
+    <div class="conteneur pied-in">
+      <div><img src="/images/logop2p-blanc.png" alt={site.nom} width="160" height="48" loading="lazy" /></div>
+      <div>
+        <h2>Menu principal</h2>
+        <ul>{nav.map(l => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+      </div>
+      <div>
+        <h2>Légal</h2>
+        <ul><li><a href="/mentions-legales">Mentions légales</a></li></ul>
+      </div>
+      <div>
+        <h2>Suivez-nous</h2>
+        <ul>
+          {site.reseaux.map(r => <li><a href={r.url} rel="noopener">{r.nom}</a></li>)}
+          <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="conteneur copyright">© {new Date().getFullYear()} {site.nom} — tous droits réservés</p>
+  </footer>
+</body>
+</html>

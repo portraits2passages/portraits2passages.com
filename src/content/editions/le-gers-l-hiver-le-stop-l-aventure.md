@@ -1,0 +1,48 @@
+---
+titre: "Le Gers, l'hiver, le stop, l'aventure !"
+date: 2022-02-11
+description: "Paul-Émile et Éliot partent découvrir le Gers en autostop depuis Toulouse. 48 heures de rencontres, paysages et défis uniques !"
+chapo: "Paul-Émile et Éliot partent découvrir le Gers en autostop depuis Toulouse. 48 heures de rencontres, paysages et défis uniques !"
+couverture: "/images/miniature-p2p-002.jpg"
+youtube: "ajU7JHlmANA"
+carte: "https://umap.openstreetmap.fr/fr/map/p2p-002-gers_1423409"
+carteTexte: "Les mots et les images racontent l'émotion, mais la géographie raconte l'effort. Pour visualiser l'ampleur du périple et des détours découvrez la trace exacte de leur itinéraire ainsi que la localisation des défis."
+defis:
+  - nom: "Alexandre Dumas"
+    question: "Rend-toi dans le lieu de naissance d'un de ces militaires intrépides forts connus."
+    reponse: "Le château de Castelmore se situe sur la commune de Lupiac, dans le département français du Gers. Il doit sa renommée au fait d'être le lieu de naissance de Charles de Batz de Castelmore, dit D'Artagnan."
+  - nom: "La cistercienne"
+    question: "Rend toi dans cet espace sacré, sur le lieu où se rencontrent la Baïse et l'Auloue."
+    reponse: "L'abbaye de Flaran est une ancienne abbaye cistercienne, fille de l'abbaye de l'Escaladieu (Hautes-Pyrénées), située à Valence-sur-Baïse, dans le département du Gers. Elle fut fondée en 1151, au confluent de l'Auloue et de la Baïse."
+  - nom: "Henri Lambert"
+    question: "Isatis tinctoria, plante utilisée pour son beau bleu. Il est encore produit dans le Gers. Rend-toi sur son lieu de production."
+    reponse: "Fondé en 1994 par Henri Lambert, le Bleu de Lectoure est devenu, au fil du temps, un acteur incontournable dans la valorisation du pastel des teinturiers (Isatis tinctoria). Henri Lambert a, durant plusieurs années, remis au goût du jour des techniques de teinture ancestrales. Il a également construit la notoriété de la marque « Bleu de Lectoure ». Aujourd'hui, l'entreprise est située au 15 Avenue de la gare, dans l'ancienne gare de Lectoure."
+  - nom: "Capitale de l'or rose"
+    question: "Dans cette ville, un marché où est vendu l'or a lieu de manière hebdomadaire. Trouve ce lieu !"
+    reponse: "Dans le Gers, et plus précisément à Gimont et Samatan, se tiennent des grands marchés de foies gras (entre octobre et mars). Achat directement aux producteurs !"
+  - nom: "Capitale antique"
+    question: "Un palais, des mosaïques, des thermes... Ces lieux sont un vrai trésor !"
+    reponse: "Eauze abrite le site archéologique d'Elusa, capitale antique. C'est un ensemble gallo-romain composé de trois sites : deux villas et un musée archéologique du trésor d'Eauze."
+  - nom: "Ça tourne !"
+    question: "Rend-toi dans au moins un lieu de tournage de film situé dans le Gers."
+    reponse: "Un certain nombre d'œuvres cinématographiques ont été tournées dans le département du Gers. Voici quelques exemples : • Auch – 1994 : Le Sourire, de Claude Miller • Eauze, Vic-Fezensac – 1995 : Le bonheur est dans le pré d'Étienne Chatiliez • Lectoure – 2001 : Le Pacte des loupes de Christophe Gans • Auterives – 2018 : Les Vieux Fourneaux de Christophe Duthuron • Auch – 2022 : Les Vieux Fourneaux 2 : Bons pour l'asile de Christophe Duthuron"
+  - nom: "Monumental"
+    question: "Il relie la ville basse et la ville haute. Ses esplanades ont été agrémentées de statues et de l'observatoire du temps."
+    reponse: "L'escalier monumental d'Auch est un site classé et un monument historique du XIXe siècle constituant une voie piétonne reliant par les 374 marches de son escalier la haute et la basse-ville d'Auch. Il y a 374 marches au total avec les doubles volées."
+  - nom: "Carrée"
+    question: "Cette tour aurait pu être appelée la Tour d'Astarac si elle n'était pas passée dans les mains d'une autre famille."
+    reponse: "La Tour de Rohan, à Mirande. Au XIIIe siècle, le comte d'Astarac Bernard IV et son fils Centulle III souhaitent que Mirande devienne capitale du pays d'Astarac. Ils quittent alors Simorre pour s'établir dans la ville nouvelle, où ils font édifier un château. Ils installent à l'intérieur de la bastide une résidence seigneuriale avec une tour carrée en brique, encore visible aujourd'hui. En 1739, le comté d'Astarac passe par voie de mariage à la famille Rohan-Chabot (descendants des Ducs de Bretagne), d'où le nom actuel de la tour visible à l'angle de la rue des écoles et de la rue Sérignac."
+  - nom: "Sarragachies"
+    question: "Ils ont plus de 200 ans ! Mais leur goût est toujours aussi bon, surtout avec quelques sulfites."
+    reponse: "La vigne de Sarragachies ou « vigne de la Ferme Pédebernade » est une parcelle de vieilles vignes du Gers, au cœur de la Gascogne, faisant partie du vignoble de Plaimont Producteurs, dont les souches sont parmi les plus anciennes de France."
+  - nom: "Cacardement"
+    question: "Elles apprennent aux chats à marcher dans les Disney. Un musée leur est dédié dans ce département."
+    reponse: "Petit Musée de l'oie et du canard à Gimont."
+  - nom: "La Gourmande"
+    question: "Goûtez et présentez des spécialités culinaires du département."
+    reponse: "Quelques idées de dégustations dans le Gers : • Tous les plats à base de canards et oies (foies gras, magrets, etc.) • L'ail blanc de Lomagne (IGP) • Le melon de Lectoure • L'armagnac • Le floc de Gascogne (mélange de moût de raisin et d'armagnac jeune) • Le Pousse-Rapière (liqueur d'armagnac et vin sauvage) produit par le Château de Monluc, à Saint-Puy"
+---
+
+Place à une nouvelle édition de Portraits 2 Passages avec deux participants aux profils aussi variés qu’intriguants : Paul-Émile, ingénieur et grimpeur agenais, et Éliot, doctorant et artiste parisien. Leur mission ? Découvrir un département encore inconnu pour eux : le Gers !
+
+Départ vendredi 11 février à 8h de Toulouse pour une aventure unique entre sudistes. Leur défi ? Explorer le territoire et revenir, le tout en moins de 48 heures, uniquement en autostop. Rencontres, paysages et imprévus garantis dans cette escapade riche en découvertes !

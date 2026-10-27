@@ -1,0 +1,48 @@
+---
+titre: "Tout doux dans le Doubs"
+date: 2022-07-25
+description: "Direction le Doubs pour David, ingénieur au CNES, et Océane, chercheuse en écologie, à la découverte de massifs, rivières, rencontres et traditions..."
+chapo: "Direction le Doubs pour David, ingénieur au CNES, et Océane, chercheuse en écologie, à la découverte de massifs, rivières, rencontres et traditions locales. Une aventure authentique et savoureuse, fidèle à l’esprit de Portraits 2 Passages !"
+couverture: "/images/miniature.jpg"
+youtube: "jm2TGt58o9E"
+carte: "https://umap.openstreetmap.fr/fr/map/p2p-007-doubs_1423428"
+carteTexte: "Les mots et les images racontent l'émotion, mais la géographie raconte l'effort. Pour visualiser l'ampleur du périple et des détours découvrez la trace exacte de leur itinéraire ainsi que la localisation des défis."
+defis:
+  - nom: "La misérable"
+    question: "Rends-toi dans la ville des Bisontins et retrouve les traces d'un d'entre eux, célèbre pour son exil sur les îles de Jersey et Guernesey."
+    reponse: "« La maison natale de Victor Hugo » est un appartement du centre historique de Besançon, où est né l'écrivain idéologue humaniste français Victor Hugo au 1ᵉʳ étage du 140 Grande Rue de Besançon dans le Doubs en Bourgogne-Franche-Comté."
+  - nom: "La viandarde"
+    question: "Traditionnellement préparée dans un tuyé, elle est consommée chaude ou froide. Originaire d'un village proche de la frontière Suisse, elle a réussi à devenir une célébrité internationale. Trouve le village où elle a été créée !"
+    reponse: "La célèbre saucisse de Morteau à… Morteau !"
+  - nom: "La grotesque"
+    question: "Ce lieu abrite des familles depuis au moins 50 000 ans. Tu peux y trouver pleins de choses étonnantes, notamment une nécropole d'ours. Trouve ce lieu ! Petite particularité : tu n'es pas obligé.e de visiter ce lieu en profondeur."
+    reponse: "La Grotte d'Osselle (42 Rte des Grottes, 25410 Roset-Fluans)."
+  - nom: "La trouée"
+    question: "Creusé par des eaux de surface, il est le plus vaste d'Europe. Il possède de la pierre, des salles, des stalactites et même un petit lac. Trouve une personne qui a visité ce lieu. Petite particularité : tu n'es pas obligé.e de visiter ce lieu en profondeur."
+    reponse: "Le gouffre de poudrey."
+  - nom: "La vauban"
+    question: "Elle fait partie de ces forteresses qui vous offriront une vue imprenable sur les environ. Elle accueille de nombreux musées. Trouve ce lieu."
+    reponse: "La citadelle de Besançon."
+  - nom: "La sire"
+    question: "À quelle grande famille originaire du Doubs appartiennent ces armoiries ? Trouve leur hôtel dans un village proche de la rivière du Doubs."
+    reponse: "Les Sires de Neufchâtel (Baumes-les-Dames)."
+  - nom: "La mouillée"
+    question: "Cette rivière a été une grande source d'inspiration pour Gustave Courbet. Trouve sa source."
+    reponse: "La source de la Loue (25520 Ouhans)."
+  - nom: "La peugeot"
+    question: "Dans la trouée de Belfort, deux villes se partagent un grand club…. Lequel ? Trouve le stade de leurs entraînements et découvre l'histoire du lieu."
+    reponse: "Stade Auguste-Bonal (Montbéliard)."
+  - nom: "La douane"
+    question: "Est-ce que tu arriveras à être à la fois en France et à la fois en Suisse ? Prouve-le !"
+    reponse: "Le long de la frontière Suisse."
+  - nom: "La belvoir"
+    question: "En haut d'une colline, il domine la vallée. Louis XI y a mis le feu en 1480… Rends-toi près de ce lieu et prends une vidéo."
+    reponse: "Le château de Belvoir."
+  - nom: "La journaliste"
+    question: "Mon premier traverse des rivières. Mon deuxième peut être à la fois esthétique, politique ou religieux. Mon troisième remplace l'acte de tisser. Mon tout est une ville du Doubs. Trouve le plus d'informations sur cette ville et réalise un reportage."
+    reponse: "La ville de Pontarlier."
+---
+
+Pour compléter notre Grand Chlem sur la Franche Comté, il nous manquait le petit dernier de la série : le Doubs ! Un département complétement nouveau pour nos deux volontaires du jour : David (ingénieur en imagerie spatiale au CNES) et Océane (doctorante en gestion de l’eau) ! Cette édition les emmènera à la découverte de massifs, rivières et bien évidemment de la culture locale.
+
+Les deux binômes ont quitté Dijon à 8h le 24 juillet et sont rentrés le 25 juillet au soir, uniquement en auto-stop.
