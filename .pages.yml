@@ -104,7 +104,7 @@ content:
           - { name: photo, label: Photo, type: image }
           - { name: bio, label: Présentation, type: text }
   - name: formations
-    label: Formations
+    label: Interventions
     type: file
     path: src/data/formations.json
     format: json
@@ -130,7 +130,7 @@ content:
           - { name: detail, label: Détail, type: text }
           - { name: lien, label: Lien (facultatif), type: string }
   - name: formations-en
-    label: Formations (anglais)
+    label: Interventions (anglais)
     type: file
     path: src/data/formations.en.json
     format: json
