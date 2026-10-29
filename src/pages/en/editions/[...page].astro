@@ -1,0 +1,8 @@
+---
+import type { GetStaticPaths } from 'astro';
+import ListeEditions from '../../../views/ListeEditions.astro';
+import { getEditions } from '../../../editions';
+
+export const getStaticPaths = (async ({ paginate }) => paginate(await getEditions('en'), { pageSize: 6 })) satisfies GetStaticPaths;
+---
+<ListeEditions lang="en" page={Astro.props.page} />

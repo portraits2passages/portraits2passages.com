@@ -1,0 +1,48 @@
+---
+titre: "Haute-Savoie: between lakes and mountains"
+date: 2022-07-01
+description: "Our first edition in the Alps! This time two very shy people, Emmanuel and Romain, set off on an adventure in the very touristy region of..."
+chapo: "Our first edition in the Alps! This time two very shy people, Emmanuel and Romain, set off on an adventure in the very touristy region of Haute-Savoie."
+couverture: "/images/miniature-p2p-004-1.jpg"
+youtube: "lHQJWM0SzBY"
+carte: "https://umap.openstreetmap.fr/fr/map/p2p-004-haute-savoie_1423419"
+carteTexte: "Words and pictures tell the emotion, but geography tells the effort. To see the full scale of the journey and its detours, explore the exact route they took and where each challenge was located."
+defis:
+  - nom: "The Yvoire"
+    question: "Want to awaken your five senses? Visit this magnificent living work of art."
+    reponse: "The Garden of the Five Senses in Yvoire."
+  - nom: "The Sainte-Claire"
+    question: "It's in the land of the trout that you'll need to find the traces of the forerunner of the Académie française."
+    reponse: "The Académie florimontane, forerunner of the Académie française and formerly the Société florimontane, is a learned society founded in 1606–1607 in Annecy. Its aim is to encourage theological, philosophical, scientific and literary activity by bringing academicians together at the Hôtel Bagnoréa, rue Sainte-Claire, Annecy."
+  - nom: "The Abyss"
+    question: "Straddling the Chéran 96 m up, it is a crossing point for many hikes."
+    reponse: "The Pont de l'Abîme is a suspension bridge in Haute-Savoie. It carries departmental road 31, directly linking the communes of Cusy and Gruffy, across the Chéran where it leaves the Bange gorge, 96 metres above the water."
+  - nom: "The Devémy"
+    question: "At the end of the sculptures stands an extraordinary building where religion and modern art found common ground."
+    reponse: "The church of Notre-Dame de Toute Grâce, founded by Canon Devémy, owes its reputation to the many renowned artists who helped decorate it. Although of different religions, opinions and styles, they left behind a unique work."
+  - nom: "The Cachat"
+    question: "This miraculous spring cured the aristocrat Jean Charles de Laizer of his kidney stones."
+    reponse: "The Cachat spring in Évian-les-Bains."
+  - nom: "The Ripaille"
+    question: "This building is 3,000 years old — yes, 3,000 years! It's a magnificent place on the shores of Lake Geneva, known for its history, its nature and its wine."
+    reponse: "The Château de Ripaille, Domaine de Ripaille, Thonon-les-Bains."
+  - nom: "The Tower"
+    question: "The Counts of Geneva built their castle here… and only this tower remains!"
+    reponse: "The Tower of the Counts of Geneva, La Roche-sur-Foron."
+  - nom: "The Fountain"
+    question: "At the heart of the historic Albanais region, this town has many remarkable fountains! Find at least four of them."
+    reponse: "In Rumilly, four fountains are spread across the town."
+  - nom: "The Lagoon"
+    question: "This day is made sublime by its lakes… Find as many as you can."
+    reponse: "Here are some of the many lakes in Haute-Savoie: • Lake Annecy • Lake Geneva • Lac de la Balme-de-Sillingy • Lacs aux Dames • Lac de Gers • Lac de Roy • Lac Bleu • Lac d'Anterne"
+  - nom: "The Sommeiller"
+    question: "He helped build the Mont-Cenis tunnel, the first great mountain tunnel. One of his statues stands in his home village — find it!"
+    reponse: "In Saint-Jeoire, there is the monument to Germain Sommeiller."
+  - nom: "The Bianco"
+    question: "His head is almost always in the clouds, but he never goes anywhere without his “Goûter”."
+    reponse: "Mont Blanc (whose Dôme du Goûter — “goûter” also means “afternoon snack” — sits just below the summit)."
+---
+
+This time we dive into the wild nature of Savoy with Emmanuel, the teacher, and Romain, the student. For this edition, they get to discover a department that combines sport and nature: Haute-Savoie! Heading for the summits on this adventure.
+
+Both pairs left Chambéry at 8 am on Friday 1 July and returned on the evening of Saturday 2 July, hitchhiking only.

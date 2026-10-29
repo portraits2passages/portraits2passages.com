@@ -1,26 +1,4 @@
 ---
-import Base from '../layouts/Base.astro';
-import f from '../data/formations.json';
+import Formations from '../views/Formations.astro';
 ---
-<Base titre="Formations" description="Formations et accompagnements : Systèmes Terre, numérique responsable (Green IT, communs numériques) et sécurité informatique.">
-  <section class="conteneur section">
-    <h1>Nos formations</h1>
-    <div class="grille">
-      {f.themes.map(t => (
-        <article class="theme">
-          <img src={t.image} alt="" loading="lazy" width="480" height="300" />
-          <h2>{t.titre}</h2>
-          <p>{t.intro}</p>
-          <ul>{t.points.map(p => <li>{p}</li>)}</ul>
-        </article>
-      ))}
-    </div>
-  </section>
-  <section class="section fond-clair">
-    <div class="conteneur etroit">
-      <h2>Intéressé par une formation ? Contactez-nous !</h2>
-      <p>Écrivez-nous en précisant les thèmes qui vous intéressent : nous adapterons la formation ou l'accompagnement à votre besoin.</p>
-      <a class="bouton" href="/contact">Nous contacter</a>
-    </div>
-  </section>
-</Base>
+<Formations lang="fr" />

@@ -1,54 +1,10 @@
 ---
-import { getCollection, render } from 'astro:content';
-import Base from '../../layouts/Base.astro';
-import YouTube from '../../components/YouTube.astro';
+import Edition from '../../views/Edition.astro';
+import { getEditions } from '../../editions';
 
 export async function getStaticPaths() {
-  const editions = await getCollection('editions');
-  return editions.map(e => ({ params: { slug: e.id }, props: { edition: e } }));
+  const en = new Set((await getEditions('en')).map(e => e.id));
+  return (await getEditions('fr')).map(e => ({ params: { slug: e.id }, props: { edition: e, traduite: en.has(e.id) } }));
 }
-const { edition } = Astro.props;
-const { Content } = await render(edition);
-const d = edition.data;
-const date = d.date.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 ---
-<Base titre={d.titre} description={d.description} image={d.couverture}>
-  <article class="edition">
-    <header class="conteneur etroit">
-      <p class="fil"><a href="/editions">Les éditions P2P</a> › {d.titre}</p>
-      <img class="couverture" src={d.couverture} alt="" width="960" height="540" />
-      <h1>{d.titre}</h1>
-      <p class="date"><time datetime={d.date.toISOString().slice(0, 10)}>{date}</time></p>
-      <p class="chapo">{d.chapo}</p>
-    </header>
-    <div class="conteneur etroit prose"><Content /></div>
-
-    <section class="conteneur etroit section">
-      <h2>La vidéo</h2>
-      <YouTube id={d.youtube} titre={d.titre} />
-    </section>
-
-    <section class="conteneur section">
-      <div class="etroit">
-        <h2>La carte des trajets</h2>
-        {d.carteTexte && <p>{d.carteTexte}</p>}
-        <p class="info"><strong>À savoir :</strong> vous pouvez interagir avec la carte pour afficher ou cacher les défis ou les trajets. Pensez à cacher la liste des défis si vous souhaitez les réaliser vous-même !</p>
-      </div>
-      <iframe class="carte" src={d.carte} title={`Carte des trajets : ${d.titre}`} loading="lazy" allowfullscreen></iframe>
-    </section>
-
-    {d.defis.length > 0 && (
-      <section class="conteneur etroit section defis">
-        <h2>Les défis</h2>
-        <p>Saurez-vous, comme eux, relever ces défis culturels ? Testez vos connaissances sur le département avec les énigmes ci-dessous.</p>
-        <button type="button" class="bouton secondaire imprimer" onclick="window.print()">Imprimer les défis (sans les réponses)</button>
-        {d.defis.map(x => (
-          <details class="defi">
-            <summary><strong>{x.nom}</strong> — {x.question}</summary>
-            <p class="reponse">{x.reponse}</p>
-          </details>
-        ))}
-      </section>
-    )}
-  </article>
-</Base>
+<Edition lang="fr" edition={Astro.props.edition} traduite={Astro.props.traduite} />

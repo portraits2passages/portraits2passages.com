@@ -1,0 +1,48 @@
+---
+titre: "The Gers: winter, hitchhiking, adventure!"
+date: 2022-02-11
+description: "Paul-Émile and Éliot set off from Toulouse to discover the Gers by hitchhiking. 48 hours of encounters, landscapes and unique challenges!"
+chapo: "Paul-Émile and Éliot set off from Toulouse to discover the Gers by hitchhiking. 48 hours of encounters, landscapes and unique challenges!"
+couverture: "/images/miniature-p2p-002.jpg"
+youtube: "ajU7JHlmANA"
+carte: "https://umap.openstreetmap.fr/fr/map/p2p-002-gers_1423409"
+carteTexte: "Words and pictures tell the emotion, but geography tells the effort. To see the full scale of the journey and its detours, explore the exact route they took and where each challenge was located."
+defis:
+  - nom: "Alexandre Dumas"
+    question: "Go to the birthplace of one of those fearless and very famous soldiers."
+    reponse: "The Château de Castelmore is in the commune of Lupiac, in the Gers. It is famous as the birthplace of Charles de Batz de Castelmore, known as D'Artagnan."
+  - nom: "The Cistercian"
+    question: "Go to this sacred place where the Baïse and the Auloue meet."
+    reponse: "Flaran Abbey is a former Cistercian abbey, a daughter house of Escaladieu Abbey (Hautes-Pyrénées), located in Valence-sur-Baïse in the Gers. It was founded in 1151 at the confluence of the Auloue and the Baïse."
+  - nom: "Henri Lambert"
+    question: "Isatis tinctoria, a plant used for its beautiful blue. It is still produced in the Gers. Go to where it is made."
+    reponse: "Founded in 1994 by Henri Lambert, Bleu de Lectoure has become a key player in promoting dyer's woad (Isatis tinctoria). For several years Henri Lambert revived ancestral dyeing techniques and built the reputation of the “Bleu de Lectoure” brand. Today the company is at 15 avenue de la Gare, in Lectoure's old railway station."
+  - nom: "Capital of pink gold"
+    question: "In this town, a market where gold is sold takes place every week. Find this place!"
+    reponse: "In the Gers, and more precisely in Gimont and Samatan, large foie gras markets are held (between October and March). Buy directly from the producers!"
+  - nom: "Ancient capital"
+    question: "A palace, mosaics, baths... These places are a real treasure!"
+    reponse: "Eauze is home to the archaeological site of Elusa, an ancient capital. It is a Gallo-Roman complex of three sites: two villas and an archaeological museum housing the Eauze treasure."
+  - nom: "Action!"
+    question: "Go to at least one film location in the Gers."
+    reponse: "A number of films have been shot in the Gers. A few examples: • Auch – 1994: Le Sourire by Claude Miller • Eauze, Vic-Fezensac – 1995: Le bonheur est dans le pré by Étienne Chatiliez • Lectoure – 2001: Brotherhood of the Wolf by Christophe Gans • Auterive – 2018: Les Vieux Fourneaux by Christophe Duthuron • Auch – 2022: Les Vieux Fourneaux 2 by Christophe Duthuron"
+  - nom: "Monumental"
+    question: "It links the lower town and the upper town. Its terraces are adorned with statues and the observatory of time."
+    reponse: "Auch's Monumental Staircase is a listed 19th-century historic monument: a pedestrian route linking the upper and lower town of Auch by 374 steps, including the double flights."
+  - nom: "Square"
+    question: "This tower could have been called the Astarac Tower if it hadn't passed into the hands of another family."
+    reponse: "The Tour de Rohan in Mirande. In the 13th century, Count Bernard IV of Astarac and his son Centulle III wanted Mirande to become the capital of the Astarac country. They left Simorre to settle in the new town, where they built a castle and, inside the bastide, a lordly residence with a square brick tower that can still be seen today. In 1739 the county of Astarac passed by marriage to the Rohan-Chabot family (descendants of the Dukes of Brittany), hence the tower's current name. It stands on the corner of rue des Écoles and rue Sérignac."
+  - nom: "Sarragachies"
+    question: "They are over 200 years old! But they still taste just as good, especially with a few sulphites."
+    reponse: "The Sarragachies vineyard, or “Pédebernade Farm vineyard”, is a plot of old vines in the Gers, in the heart of Gascony, belonging to the Plaimont Producteurs vineyards. Its vines are among the oldest in France."
+  - nom: "Honking"
+    question: "In Disney films, they teach cats how to walk. A museum is dedicated to them in this department."
+    reponse: "The Little Museum of the Goose and the Duck in Gimont."
+  - nom: "The Foodie"
+    question: "Taste and present some of the department's culinary specialities."
+    reponse: "Some tasting ideas in the Gers: • Anything made with duck and goose (foie gras, magret, etc.) • Lomagne white garlic (PGI) • Lectoure melon • Armagnac • Floc de Gascogne (a blend of grape must and young Armagnac) • Pousse-Rapière (an Armagnac liqueur with sparkling wine) produced by Château de Monluc in Saint-Puy"
+---
+
+Here comes a new edition of Portraits 2 Passages with two participants whose profiles are as varied as they are intriguing: Paul-Émile, an engineer and climber from Agen, and Éliot, a PhD student and artist from Paris. Their mission? To discover a department still unknown to them: the Gers!
+
+They set off from Toulouse at 8 am on Friday 11 February for a unique adventure among southerners. Their challenge? Explore the region and come back, all in under 48 hours, hitchhiking only. Encounters, landscapes and surprises guaranteed on this getaway full of discoveries!

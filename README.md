@@ -8,7 +8,9 @@ npm run dev      # http://localhost:4321
 npm run build    # site statique dans dist/
 ```
 
-- Contenu : `src/content/editions/*.md` (une édition = un fichier), `src/data/*.json` (accueil, formations, réglages), `src/content/mentions-legales.md`.
+- Contenu FR : `src/content/editions/*.md`, `src/data/*.json`, `src/content/mentions-legales.md`.
+- Contenu EN : `src/content/editions-en/*.md` (même nom de fichier que la version FR), `src/data/*.en.json`, `src/content/mentions-legales.en.md`. Textes d'interface : `src/i18n.ts`.
+- Mode sombre : suit le réglage du système, avec un bouton pour forcer clair/sombre (couleurs dans `src/styles/global.css`).
 - Images : `public/images/`.
 - Back-office : `.pages.yml` (Pages CMS, après dépôt sur GitHub).
 - `scripts/extraire.py` : script qui a généré les éditions à partir du HTML du site actuel.

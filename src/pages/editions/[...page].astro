@@ -1,28 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
-import type { GetStaticPaths, Page } from 'astro';
-import type { CollectionEntry } from 'astro:content';
-import Base from '../../layouts/Base.astro';
-import CarteEdition from '../../components/CarteEdition.astro';
+import type { GetStaticPaths } from 'astro';
+import ListeEditions from '../../views/ListeEditions.astro';
+import { getEditions } from '../../editions';
 
-export const getStaticPaths = (async ({ paginate }) => {
-  const editions = (await getCollection('editions')).sort((a, b) => +b.data.date - +a.data.date);
-  return paginate(editions, { pageSize: 6 });
-}) satisfies GetStaticPaths;
-
-const { page } = Astro.props as { page: Page<CollectionEntry<'editions'>> };
+export const getStaticPaths = (async ({ paginate }) => paginate(await getEditions('fr'), { pageSize: 6 })) satisfies GetStaticPaths;
 ---
-<Base titre={page.currentPage > 1 ? `Éditions (page ${page.currentPage})` : 'Éditions'}
-      description="Toutes les éditions de Portraits 2 Passages : des week-ends en stop, sans téléphone, à la découverte de territoires méconnus, en vidéo, en carte et en défis.">
-  <section class="conteneur section">
-    <h1>Les éditions P2P</h1>
-    <div class="grille">{page.data.map(e => <CarteEdition edition={e} />)}</div>
-    {page.lastPage > 1 && (
-      <nav class="pagination" aria-label="Pagination">
-        {page.url.prev && <a href={page.url.prev}>← Plus récentes</a>}
-        <span>Page {page.currentPage} / {page.lastPage}</span>
-        {page.url.next && <a href={page.url.next}>Plus anciennes →</a>}
-      </nav>
-    )}
-  </section>
-</Base>
+<ListeEditions lang="fr" page={Astro.props.page} />

@@ -1,17 +1,21 @@
 ---
 import site from '../data/site.json';
+import { t, routes, type Lang } from '../i18n';
 // Envoi via Web3Forms : les messages arrivent sur l'adresse liée à la clé (contact@portraits2passages.com).
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const f = t(lang).form;
 ---
 <form class="formulaire" action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value={site.web3formsKey} />
-  <input type="hidden" name="subject" value="Contact depuis le site" />
+  <input type="hidden" name="subject" value={f.sujet} />
   <input type="hidden" name="from_name" value={site.nom} />
-  <input type="hidden" name="redirect" value={new URL('/merci', Astro.site).href} />
-  <label>Nom complet<input name="nom" required autocomplete="name" /></label>
-  <label>E-mail<input type="email" name="email" required autocomplete="email" /></label>
-  <label>Objet<input name="objet" /></label>
-  <label>Message<textarea name="message" rows="6" required></textarea></label>
+  <input type="hidden" name="redirect" value={new URL(routes.merci[lang], Astro.site).href} />
+  <label>{f.nom}<input name="nom" required autocomplete="name" /></label>
+  <label>{f.email}<input type="email" name="email" required autocomplete="email" /></label>
+  <label>{f.objet}<input name="objet" /></label>
+  <label>{f.message}<textarea name="message" rows="6" required></textarea></label>
   <!-- Piège à robots : case invisible, rejetée par Web3Forms si cochée -->
   <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="cache" aria-hidden="true" />
-  <button type="submit" class="bouton">Envoyer le message</button>
+  <button type="submit" class="bouton">{f.envoyer}</button>
 </form>

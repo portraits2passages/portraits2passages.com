@@ -1,49 +1,59 @@
 ---
 import site from '../data/site.json';
+import { t, routes, type Lang } from '../i18n';
 import '../styles/global.css';
 
-interface Props { titre?: string; description?: string; image?: string; }
-const { titre, description = site.description, image = '/images/miniature.png' } = Astro.props;
-const titreComplet = titre ? `${titre} — ${site.slogan} | ${site.nom}` : `${site.slogan} | ${site.nom}`;
-const canonical = new URL(Astro.url.pathname.replace(/\.html$/, ''), Astro.site);
-const imageAbs = new URL(image, Astro.site);
-const nav = [
-  { href: '/', label: 'Accueil' },
-  { href: '/editions', label: 'Éditions' },
-  { href: '/formations', label: 'Formations' },
-  { href: '/contact', label: 'Contact' },
-];
-const actif = (href: string) => href === '/' ? Astro.url.pathname === '/' : Astro.url.pathname.startsWith(href);
+interface Props { lang: Lang; alternate: string; titre?: string; description?: string; image?: string; }
+const { lang, alternate, titre, image = '/images/miniature.png' } = Astro.props;
+const tx = t(lang);
+const description = Astro.props.description ?? tx.description;
+const autre: Lang = lang === 'fr' ? 'en' : 'fr';
+const titreComplet = titre ? `${titre} — ${tx.slogan} | ${site.nom}` : `${tx.slogan} | ${site.nom}`;
+const abs = (p: string) => new URL(p, Astro.site).href;
+const ici = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+const nav = (['accueil', 'editions', 'formations', 'contact'] as const).map(k => ({ href: routes[k][lang], label: tx.nav[k] }));
+const actif = (href: string) => href === routes.accueil[lang] ? ici === href : ici.startsWith(href);
 ---
 <!doctype html>
-<html lang="fr">
+<html lang={lang}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{titreComplet}</title>
   <meta name="description" content={description} />
-  <link rel="canonical" href={canonical} />
+  <link rel="canonical" href={abs(ici)} />
+  <link rel="alternate" hreflang={lang} href={abs(ici)} />
+  <link rel="alternate" hreflang={autre} href={abs(alternate)} />
+  <link rel="alternate" hreflang="x-default" href={abs(lang === 'fr' ? ici : alternate)} />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_GB'} />
   <meta property="og:site_name" content={site.nom} />
   <meta property="og:title" content={titre ?? site.nom} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={imageAbs} />
+  <meta property="og:image" content={abs(image)} />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="/images/logop2p-bicolor.png" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <link rel="preconnect" href="https://fonts.bunny.net" />
   <link rel="stylesheet" href="https://fonts.bunny.net/css?family=poppins:500,600,700|roboto:400,500&display=swap" />
+  <!-- Applique le thème choisi avant l'affichage, pour éviter un flash clair -->
+  <script is:inline>
+    try { const th = localStorage.getItem('theme'); if (th) document.documentElement.dataset.theme = th; } catch (e) {}
+  </script>
   <slot name="head" />
 </head>
 <body>
   <header class="entete">
     <div class="conteneur entete-in">
-      <a href="/" class="logo"><img src="/images/logop2p-bicolor.png" alt="" width="48" height="48" /><span>{site.nom}</span></a>
+      <a href={routes.accueil[lang]} class="logo"><img src="/images/logop2p-bicolor.png" alt="" width="48" height="48" /><span>{site.nom}</span></a>
       <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menu" />
       <label for="menu-toggle" class="menu-bouton" aria-hidden="true">☰</label>
-      <nav aria-label="Menu principal">
+      <nav aria-label={tx.menuPrincipal}>
         <ul>
           {nav.map(l => <li><a href={l.href} aria-current={actif(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
+          <li><a href={alternate} hreflang={autre} lang={autre} class="langue" title={tx.autreLangueLabel}>{tx.autreLangue}</a></li>
+          <li><button type="button" class="theme-bouton" aria-label={tx.theme} title={tx.theme}><span class="icone-lune" aria-hidden="true">☾</span><span class="icone-soleil" aria-hidden="true">☀</span></button></li>
         </ul>
       </nav>
     </div>
@@ -53,22 +63,30 @@ const actif = (href: string) => href === '/' ? Astro.url.pathname === '/' : Astr
     <div class="conteneur pied-in">
       <div><img src="/images/logop2p-blanc.png" alt={site.nom} width="160" height="48" loading="lazy" /></div>
       <div>
-        <h2>Menu principal</h2>
+        <h2>{tx.menuPrincipal}</h2>
         <ul>{nav.map(l => <li><a href={l.href}>{l.label}</a></li>)}</ul>
       </div>
       <div>
-        <h2>Légal</h2>
-        <ul><li><a href="/mentions-legales">Mentions légales</a></li></ul>
+        <h2>{tx.legal}</h2>
+        <ul><li><a href={routes.mentions[lang]}>{tx.mentions}</a></li></ul>
       </div>
       <div>
-        <h2>Suivez-nous</h2>
+        <h2>{tx.suivez}</h2>
         <ul>
           {site.reseaux.map(r => <li><a href={r.url} rel="noopener">{r.nom}</a></li>)}
           <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
         </ul>
       </div>
     </div>
-    <p class="conteneur copyright">© {new Date().getFullYear()} {site.nom} — tous droits réservés</p>
+    <p class="conteneur copyright">© {new Date().getFullYear()} {site.nom} — {tx.droits}</p>
   </footer>
+  <script is:inline>
+    document.querySelector('.theme-bouton').addEventListener('click', () => {
+      const html = document.documentElement;
+      const sombre = html.dataset.theme ? html.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      html.dataset.theme = sombre ? 'light' : 'dark';
+      try { localStorage.setItem('theme', html.dataset.theme); } catch (e) {}
+    });
+  </script>
 </body>
 </html>

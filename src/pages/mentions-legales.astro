@@ -1,10 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
 import { Content } from '../content/mentions-legales.md';
+import { t, routes } from '../i18n';
+const tx = t('fr');
 ---
-<Base titre="Mentions légales" description="Mentions légales, hébergement, données personnelles et cookies du site Portraits 2 Passages.">
+<Base lang="fr" alternate={routes.mentions.en} titre={tx.mentions} description={tx.mentionsMeta}>
   <section class="conteneur etroit section prose">
-    <h1>Mentions légales</h1>
+    <h1>{tx.mentions}</h1>
     <Content />
   </section>
 </Base>

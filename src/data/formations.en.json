@@ -1,0 +1,7 @@
+{
+  "themes": [
+    { "titre": "Earth systems", "image": "/images/img-11008.jpg", "intro": "Understanding the balance of the Earth system and human needs:", "points": ["Planetary boundaries", "Doughnut economics", "Managing the commons"] },
+    { "titre": "Responsible digital technology", "image": "/images/img-4980917.jpg", "intro": "Designing and developing responsible digital services:", "points": ["Green IT vs IT for Green", "The cornucopian paradigm", "Sustainable Computing Environmental Framework", "Digital commons"] },
+    { "titre": "IT security", "image": "/images/img-1591018.jpg", "intro": "Designing and using safe and reliable digital tools:", "points": ["Fundamentals of IT security", "How the secure web works", "Managing digital and physical dependencies"] }
+  ]
+}

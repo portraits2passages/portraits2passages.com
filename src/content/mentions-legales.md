@@ -63,5 +63,5 @@ En utilisant notre site web, vous consentez par la présente à notre politique 
 
 ## Contact
 
-Pour toute information complémentaire ou si vous souhaitez exercer votre droit sur vos données personnelles, vous pouvez nous contacter depuis [la page de contact](contact).
+Pour toute information complémentaire ou si vous souhaitez exercer votre droit sur vos données personnelles, vous pouvez nous contacter depuis [la page de contact](/contact).
 

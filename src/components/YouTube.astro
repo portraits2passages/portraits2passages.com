@@ -1,13 +1,15 @@
 ---
 // Façade « cliquer pour lire » : rien n'est chargé depuis YouTube avant le clic, donc pas de bandeau cookies nécessaire.
-interface Props { id: string; titre: string; }
-const { id, titre } = Astro.props;
+import { t, type Lang } from '../i18n';
+interface Props { id: string; titre: string; lang: Lang; }
+const { id, titre, lang } = Astro.props;
+const tx = t(lang);
 ---
 <div class="video" data-id={id}>
-  <button type="button" aria-label={`Lire la vidéo : ${titre}`} style={`background-image:url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)`}>
+  <button type="button" aria-label={`${tx.videoLire} ${titre}`} style={`background-image:url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)`}>
     <span class="video-play" aria-hidden="true">▶</span>
   </button>
-  <p class="video-note">La vidéo est hébergée par YouTube et ne se charge qu'au clic.</p>
+  <p class="video-note">{tx.videoNote}</p>
 </div>
 <script>
   document.querySelectorAll<HTMLElement>('.video').forEach(el => {

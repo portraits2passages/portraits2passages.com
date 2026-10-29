@@ -1,0 +1,53 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import YouTube from '../components/YouTube.astro';
+import { t, routes, editionUrl, type Lang } from '../i18n';
+interface Props { lang: Lang; edition: CollectionEntry<'editions'> | CollectionEntry<'editionsEn'>; traduite: boolean; }
+const { lang, edition, traduite } = Astro.props;
+const tx = t(lang);
+const autre: Lang = lang === 'fr' ? 'en' : 'fr';
+const { Content } = await render(edition);
+const d = edition.data;
+const date = d.date.toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base lang={lang} alternate={traduite ? editionUrl(autre, edition.id) : routes.editions[autre]} titre={d.titre} description={d.description} image={d.couverture}>
+  <article class="edition">
+    <header class="conteneur etroit">
+      <p class="fil"><a href={routes.editions[lang]}>{tx.editionsTitre}</a> › {d.titre}</p>
+      <img class="couverture" src={d.couverture} alt="" width="960" height="540" />
+      <h1>{d.titre}</h1>
+      <p class="date"><time datetime={d.date.toISOString().slice(0, 10)}>{date}</time></p>
+      <p class="chapo">{d.chapo}</p>
+    </header>
+    <div class="conteneur etroit prose"><Content /></div>
+
+    <section class="conteneur etroit section">
+      <h2>{tx.video}</h2>
+      <YouTube id={d.youtube} titre={d.titre} lang={lang} />
+    </section>
+
+    <section class="conteneur section">
+      <div class="etroit">
+        <h2>{tx.carteTitre}</h2>
+        {d.carteTexte && <p>{d.carteTexte}</p>}
+        <p class="info"><strong>{tx.aSavoir}</strong> {tx.carteInfo}</p>
+      </div>
+      <iframe class="carte" src={d.carte} title={`${tx.carteLabel} ${d.titre}`} loading="lazy" allowfullscreen></iframe>
+    </section>
+
+    {d.defis.length > 0 && (
+      <section class="conteneur etroit section defis">
+        <h2>{tx.defisTitre}</h2>
+        <p>{tx.defisIntro}</p>
+        <button type="button" class="bouton secondaire imprimer" onclick="window.print()">{tx.imprimer}</button>
+        {d.defis.map(x => (
+          <details class="defi">
+            <summary><strong>{x.nom}</strong> — {x.question}</summary>
+            <p class="reponse">{x.reponse}</p>
+          </details>
+        ))}
+      </section>
+    )}
+  </article>
+</Base>

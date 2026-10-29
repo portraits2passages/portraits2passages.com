@@ -1,0 +1,71 @@
+export type Lang = 'fr' | 'en';
+
+// Adresses de chaque page dans les deux langues (sert au sélecteur de langue et aux liens hreflang).
+export const routes = {
+  accueil: { fr: '/', en: '/en' },
+  editions: { fr: '/editions', en: '/en/editions' },
+  formations: { fr: '/formations', en: '/en/training' },
+  contact: { fr: '/contact', en: '/en/contact' },
+  mentions: { fr: '/mentions-legales', en: '/en/legal-notice' },
+  merci: { fr: '/merci', en: '/en/thank-you' },
+} as const;
+export type Route = keyof typeof routes;
+
+export const editionUrl = (lang: Lang, slug: string) => `${routes.editions[lang]}/${slug}`;
+
+const textes = {
+  fr: {
+    slogan: 'Récits de voyage et formations engagées',
+    description: 'Explorez des territoires méconnus à travers des aventures humaines uniques. Découvrez nos récits de voyage et nos formations pour un numérique sûr et responsable.',
+    nav: { accueil: 'Accueil', editions: 'Éditions', formations: 'Formations', contact: 'Contact' },
+    menuPrincipal: 'Menu principal', legal: 'Légal', mentions: 'Mentions légales', suivez: 'Suivez-nous', droits: 'tous droits réservés',
+    autreLangue: 'English', autreLangueLabel: 'Read this page in English',
+    theme: 'Changer de thème (clair / sombre)',
+    notreMission: 'Notre mission', formationsTitre: 'Formations et accompagnements', plusInfos: "Plus d'infos",
+    dernieresVideos: 'Les dernières vidéos', toutesEditions: 'Toutes les éditions', quiSommesNous: 'Qui sommes-nous ?',
+    editionsTitre: 'Les éditions P2P', editionsDescription: "Toutes les éditions de Portraits 2 Passages : des week-ends en stop, sans téléphone, à la découverte de territoires méconnus, en vidéo, en carte et en défis.",
+    page: 'Page', plusRecentes: '← Plus récentes', plusAnciennes: 'Plus anciennes →', pagination: 'Pagination',
+    video: 'La vidéo', videoLire: 'Lire la vidéo :', videoNote: "La vidéo est hébergée par YouTube et ne se charge qu'au clic.",
+    carteTitre: 'La carte des trajets', carteLabel: 'Carte des trajets :', aSavoir: 'À savoir :',
+    carteInfo: 'vous pouvez interagir avec la carte pour afficher ou cacher les défis ou les trajets. Pensez à cacher la liste des défis si vous souhaitez les réaliser vous-même !',
+    defisTitre: 'Les défis', defisIntro: 'Saurez-vous, comme eux, relever ces défis culturels ? Testez vos connaissances sur le département avec les énigmes ci-dessous.',
+    imprimer: 'Imprimer les défis (sans les réponses)',
+    formationsPageTitre: 'Nos formations', formationsMeta: 'Formations et accompagnements : Systèmes Terre, numérique responsable (Green IT, communs numériques) et sécurité informatique.',
+    formationsCta: 'Intéressé par une formation ? Contactez-nous !',
+    formationsCtaTexte: "Écrivez-nous en précisant les thèmes qui vous intéressent : nous adapterons la formation ou l'accompagnement à votre besoin.",
+    nousContacter: 'Nous contacter',
+    contactMeta: "Contactez l'équipe Portraits 2 Passages : participation à une édition, formation, partenariat ou simple question.",
+    contactIntro: 'Écrivez-nous via le formulaire ci-dessous ou directement à',
+    form: { nom: 'Nom complet', email: 'E-mail', objet: 'Objet', message: 'Message', envoyer: 'Envoyer le message', sujet: 'Contact depuis le site' },
+    mentionsMeta: 'Mentions légales, hébergement, données personnelles et cookies du site Portraits 2 Passages.',
+    merciTitre: 'Merci !', merciMeta: 'Votre message a bien été envoyé.', merciTexte: 'Votre message a bien été envoyé. Nous vous répondrons dès que possible.', retourAccueil: "Retour à l'accueil",
+  },
+  en: {
+    slogan: 'Travel stories and committed training',
+    description: 'Explore little-known regions through unique human adventures. Discover our travel stories and our training courses for safe and responsible digital technology.',
+    nav: { accueil: 'Home', editions: 'Editions', formations: 'Training', contact: 'Contact' },
+    menuPrincipal: 'Main menu', legal: 'Legal', mentions: 'Legal notice', suivez: 'Follow us', droits: 'all rights reserved',
+    autreLangue: 'Français', autreLangueLabel: 'Lire cette page en français',
+    theme: 'Switch theme (light / dark)',
+    notreMission: 'Our mission', formationsTitre: 'Training and support', plusInfos: 'Learn more',
+    dernieresVideos: 'Latest videos', toutesEditions: 'All editions', quiSommesNous: 'Who are we?',
+    editionsTitre: 'P2P editions', editionsDescription: 'Every Portraits 2 Passages edition: phone-free hitchhiking weekends exploring little-known regions, told through videos, maps and challenges.',
+    page: 'Page', plusRecentes: '← Newer', plusAnciennes: 'Older →', pagination: 'Pagination',
+    video: 'The video', videoLire: 'Play the video:', videoNote: 'The video is hosted on YouTube and only loads when you click.',
+    carteTitre: 'The route map', carteLabel: 'Route map:', aSavoir: 'Good to know:',
+    carteInfo: 'you can interact with the map to show or hide the challenges and routes. Hide the list of challenges if you want to try them yourself!',
+    defisTitre: 'The challenges', defisIntro: 'Can you take on these cultural challenges like they did? Test your knowledge of the region with the riddles below.',
+    imprimer: 'Print the challenges (without answers)',
+    formationsPageTitre: 'Our training courses', formationsMeta: 'Training and support: Earth systems, responsible digital technology (Green IT, digital commons) and IT security.',
+    formationsCta: 'Interested in a course? Get in touch!',
+    formationsCtaTexte: "Write to us with the topics you're interested in: we'll tailor the training or support to your needs.",
+    nousContacter: 'Contact us',
+    contactMeta: 'Get in touch with the Portraits 2 Passages team: joining an edition, training, partnerships or any question.',
+    contactIntro: 'Write to us using the form below or directly at',
+    form: { nom: 'Full name', email: 'Email', objet: 'Subject', message: 'Message', envoyer: 'Send message', sujet: 'Contact from the website (EN)' },
+    mentionsMeta: 'Legal notice, hosting, personal data and cookies for the Portraits 2 Passages website.',
+    merciTitre: 'Thank you!', merciMeta: 'Your message has been sent.', merciTexte: "Your message has been sent. We'll get back to you as soon as possible.", retourAccueil: 'Back to home',
+  },
+} as const;
+
+export const t = (lang: Lang) => textes[lang];

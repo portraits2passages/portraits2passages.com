@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import CarteEdition from '../components/CarteEdition.astro';
+import { t, routes, editionUrl, type Lang } from '../i18n';
+import { getEditions } from '../editions';
+import { accueil as donnees } from '../data/contenu';
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const tx = t(lang);
+const accueil = donnees(lang);
+const dernieres = (await getEditions(lang)).slice(0, 3);
+const paragraphes = (s: string) => s.split('\n\n');
+---
+<Base lang={lang} alternate={routes.accueil[lang === 'fr' ? 'en' : 'fr']}>
+  <section class="hero" style={`background-image:linear-gradient(rgba(34,50,97,.55),rgba(34,50,97,.55)),url(${accueil.imageMission})`}>
+    <div class="conteneur">
+      <h1>Portraits 2 Passages</h1>
+      <p class="hero-sous-titre">{tx.notreMission}</p>
+      <p class="hero-texte">{accueil.mission}</p>
+    </div>
+  </section>
+
+  <section class="conteneur section etroit">
+    {paragraphes(accueil.questions).map(p => <p class="grand">{p}</p>)}
+  </section>
+
+  <section class="section fond-clair">
+    <div class="conteneur etroit">
+      <h2>{tx.formationsTitre}</h2>
+      {paragraphes(accueil.formations).map(p => <p>{p}</p>)}
+      <a class="bouton" href={routes.formations[lang]}>{tx.plusInfos}</a>
+    </div>
+  </section>
+
+  <section class="conteneur section">
+    <h2>{tx.dernieresVideos}</h2>
+    <div class="grille">{dernieres.map(e => <CarteEdition href={editionUrl(lang, e.id)} {...e.data} />)}</div>
+    <p class="centre"><a class="bouton secondaire" href={routes.editions[lang]}>{tx.toutesEditions}</a></p>
+  </section>
+
+  <section class="section fond-clair">
+    <div class="conteneur">
+      <h2>{tx.quiSommesNous}</h2>
+      <div class="etroit">{paragraphes(accueil.quiSommesNous).map(p => <p>{p}</p>)}</div>
+      <div class="grille equipe">
+        {accueil.equipe.map(m => (
+          <figure class="membre">
+            <img src={m.photo} alt={m.nom} loading="lazy" width="240" height="240" />
+            <figcaption><strong>{m.nom}</strong><span>{m.role}</span><p>{m.bio}</p></figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

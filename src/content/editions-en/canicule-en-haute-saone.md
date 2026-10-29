@@ -1,0 +1,45 @@
+---
+titre: "Heatwave in Haute-Saône"
+date: 2022-07-18
+description: "July 2022: braving the heatwave, our participants set off to discover Haute-Saône! Great encounters await them, marked..."
+chapo: "July 2022: braving the heatwave, our participants set off to discover Haute-Saône! Great encounters await them, marked by sharing and by discovering the region's unmissable local produce. The cherry on the cake: a little Fougerolles kirsch?"
+couverture: "/images/miniature_p2p_005_haute-saone_v2.jpg"
+youtube: "EXLRsaITrt8"
+carte: "https://umap.openstreetmap.fr/fr/map/p2p-005-haute-saone_1423422"
+carteTexte: "Words and pictures tell the emotion, but geography tells the effort. To see the full scale of the journey and its detours, explore the exact route they took and where each challenge was located."
+defis:
+  - nom: "The Leap"
+    question: "It is 13 metres high and located in the commune of Servance. But where?"
+    reponse: "The Doue de l'Eau waterfall (Servance-Miellin, on the Ognon)."
+  - nom: "The Corbusier"
+    question: "It's a rather special site with, among other things, chapels, a convent and a peace pyramid. Find this place."
+    reponse: "The Notre-Dame du Haut chapel is a Catholic chapel built from 1953 to 1955 on Bourlémont hill in Ronchamp, Haute-Saône."
+  - nom: "The Architect"
+    question: "While strolling around Luxeuil-les-Bains, you'll need to find the town's finest mansion."
+    reponse: "Luxeuil-les-Bains has a remarkable heritage. The tourist office offers a heritage trail through the whole town in 14 stops, where you can discover the town's iconic monuments, some of which are among its 17 listed historic monuments. A few examples: • Maison du Cardinal Jouffroy • Maison François Ier • Maison du Bailli – Hôtel Thiadot • Tour des Échevins"
+  - nom: "The Vergy"
+    question: "This neoclassical medieval castle has suffered many fires… but it has always been restored! It currently houses a museum. Which one?"
+    reponse: "The Château de Champlitte was built in the 18th century in the commune of Champlitte, Haute-Saône. It currently houses the Departmental Museum of Folk Arts and Traditions."
+  - nom: "The Mural"
+    question: "In the department's “Port” lies the Human Rights mural."
+    reponse: "Port-sur-Saône. The Human Rights mural, painted in November 1990, is on the church square."
+  - nom: "The Planey"
+    question: "To complete this challenge, you'll need to go into a small forest and walk about 500 m. There you'll find a family spot with a magnificent spring."
+    reponse: "Source du Planey, D148, 70800 Anjeux, France (a resurgence)."
+  - nom: "The Cherry"
+    question: "A huge cherry stands in the department, at the entrance to a village… Find it and work out why it was put there."
+    reponse: "Fougerolles-Saint-Valbert is known for its cherry-based food economy, the cherries being used in particular to make Fougerolles kirsch and griottines."
+  - nom: "The Virgin"
+    question: "She is the emblem of the town and offers a panoramic view over the Durgeon valley."
+    reponse: "The Notre-Dame-de-la-Motte chapel, or simply the chapelle de la Motte, is dedicated to the Virgin Mary and stands at the top of La Motte hill in the centre of Vesoul, Haute-Saône. It is one of the town's historic monuments."
+  - nom: "The Official One"
+    question: "This Renaissance building has a typically Burgundian roof and Corinthian columns."
+    reponse: "The town hall of Gray is one of the most prestigious Renaissance buildings in Franche-Comté."
+  - nom: "The Sweet One"
+    question: "Along the Ognon, biscuits and charlottes are the dessert specialities. Go to the village known for both."
+    reponse: "The Montbozon biscuit is a pastry speciality from the Haute-Saône village of Montbozon."
+---
+
+This time it's Jean-Yves and Axel who brave the heatwave and embark on the P2P adventure. For this edition, they immerse themselves in the Franc-Comtois accent and discover the heritage of Haute-Saône! From Vesoul to Gray and Luxeuil, by way of the Thousand Ponds plateau, the region will hold no more secrets for them.
+
+Both pairs left Dijon at 8 am on Monday 18 July and returned on the evening of 19 July, hitchhiking only.

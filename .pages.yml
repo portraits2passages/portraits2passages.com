@@ -30,10 +30,57 @@ content:
           - { name: question, label: Énigme, type: text }
           - { name: reponse, label: Réponse, type: text }
       - { name: body, label: Récit, type: rich-text }
+  - name: editions-en
+    label: Éditions (anglais)
+    type: collection
+    path: src/content/editions-en
+    filename: "{fields.titre}.md"  # à renommer comme le fichier français correspondant
+    view:
+      fields: [titre, date]
+      sort: [date]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: titre, label: Titre, type: string, required: true }
+      - { name: date, label: Date de publication, type: date, required: true }
+      - { name: description, label: Résumé (cartes + moteurs de recherche), type: text, required: true }
+      - { name: chapo, label: Chapô, type: text, required: true }
+      - { name: couverture, label: Image de couverture, type: image, required: true }
+      - { name: youtube, label: "Identifiant de la vidéo YouTube (ex. Q1Y7ekxagGA)", type: string, required: true }
+      - { name: carte, label: Lien de la carte uMap, type: string, required: true }
+      - { name: carteTexte, label: Texte d'introduction de la carte, type: text }
+      - name: defis
+        label: Défis
+        type: object
+        list: true
+        fields:
+          - { name: nom, label: Nom du défi, type: string }
+          - { name: question, label: Énigme, type: text }
+          - { name: reponse, label: Réponse, type: text }
+      - { name: body, label: Récit, type: rich-text }
   - name: accueil
     label: Page d'accueil
     type: file
     path: src/data/accueil.json
+    format: json
+    fields:
+      - { name: mission, label: Mission, type: text }
+      - { name: imageMission, label: Image de fond, type: image }
+      - { name: questions, label: Questions, type: text }
+      - { name: formations, label: Bloc Formations, type: text }
+      - { name: quiSommesNous, label: Qui sommes-nous ?, type: text }
+      - name: equipe
+        label: Équipe
+        type: object
+        list: true
+        fields:
+          - { name: nom, label: Nom, type: string }
+          - { name: role, label: Rôle, type: string }
+          - { name: photo, label: Photo, type: image }
+          - { name: bio, label: Présentation, type: text }
+  - name: accueil-en
+    label: Page d'accueil (anglais)
+    type: file
+    path: src/data/accueil.en.json
     format: json
     fields:
       - { name: mission, label: Mission, type: text }
@@ -65,10 +112,32 @@ content:
           - { name: image, label: Image, type: image }
           - { name: intro, label: Introduction, type: text }
           - { name: points, label: Points abordés, type: string, list: true }
+  - name: formations-en
+    label: Formations (anglais)
+    type: file
+    path: src/data/formations.en.json
+    format: json
+    fields:
+      - name: themes
+        label: Thèmes
+        type: object
+        list: true
+        fields:
+          - { name: titre, label: Titre, type: string }
+          - { name: image, label: Image, type: image }
+          - { name: intro, label: Introduction, type: text }
+          - { name: points, label: Points abordés, type: string, list: true }
   - name: mentions
     label: Mentions légales
     type: file
     path: src/content/mentions-legales.md
+    fields:
+      - { name: titre, label: Titre, type: string }
+      - { name: body, label: Contenu, type: rich-text }
+  - name: mentions-en
+    label: Mentions légales (anglais)
+    type: file
+    path: src/content/mentions-legales.en.md
     fields:
       - { name: titre, label: Titre, type: string }
       - { name: body, label: Contenu, type: rich-text }

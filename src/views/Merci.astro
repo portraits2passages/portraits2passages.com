@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { t, routes, type Lang } from '../i18n';
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const tx = t(lang);
+---
+<Base lang={lang} alternate={routes.merci[lang === 'fr' ? 'en' : 'fr']} titre={tx.merciTitre} description={tx.merciMeta}>
+  <meta slot="head" name="robots" content="noindex" />
+  <section class="conteneur etroit section">
+    <h1>{tx.merciTitre}</h1>
+    <p>{tx.merciTexte}</p>
+    <a class="bouton" href={routes.accueil[lang]}>{tx.retourAccueil}</a>
+  </section>
+</Base>

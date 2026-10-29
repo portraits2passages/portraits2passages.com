@@ -1,0 +1,9 @@
+---
+import Edition from '../../../views/Edition.astro';
+import { getEditions } from '../../../editions';
+
+export async function getStaticPaths() {
+  return (await getEditions('en')).map(e => ({ params: { slug: e.id }, props: { edition: e } }));
+}
+---
+<Edition lang="en" edition={Astro.props.edition} traduite />

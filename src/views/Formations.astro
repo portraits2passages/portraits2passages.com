@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import { t, routes, type Lang } from '../i18n';
+import { formations } from '../data/contenu';
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const tx = t(lang);
+const f = formations(lang);
+---
+<Base lang={lang} alternate={routes.formations[lang === 'fr' ? 'en' : 'fr']} titre={tx.nav.formations} description={tx.formationsMeta}>
+  <section class="conteneur section">
+    <h1>{tx.formationsPageTitre}</h1>
+    <div class="grille">
+      {f.themes.map(th => (
+        <article class="theme">
+          <img src={th.image} alt="" loading="lazy" width="480" height="300" />
+          <h2>{th.titre}</h2>
+          <p>{th.intro}</p>
+          <ul>{th.points.map(p => <li>{p}</li>)}</ul>
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="section fond-clair">
+    <div class="conteneur etroit">
+      <h2>{tx.formationsCta}</h2>
+      <p>{tx.formationsCtaTexte}</p>
+      <a class="bouton" href={routes.contact[lang]}>{tx.nousContacter}</a>
+    </div>
+  </section>
+</Base>

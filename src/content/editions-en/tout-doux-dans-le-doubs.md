@@ -1,0 +1,48 @@
+---
+titre: "Taking it easy in the Doubs"
+date: 2022-07-25
+description: "Off to the Doubs for David, an engineer at CNES, and Océane, an ecology researcher, to discover mountains, rivers, people and local traditions..."
+chapo: "Off to the Doubs for David, an engineer at CNES, and Océane, an ecology researcher, to discover mountains, rivers, people and local traditions. An authentic and flavourful adventure, true to the spirit of Portraits 2 Passages!"
+couverture: "/images/miniature.jpg"
+youtube: "jm2TGt58o9E"
+carte: "https://umap.openstreetmap.fr/fr/map/p2p-007-doubs_1423428"
+carteTexte: "Words and pictures tell the emotion, but geography tells the effort. To see the full scale of the journey and its detours, explore the exact route they took and where each challenge was located."
+defis:
+  - nom: "The Miserable"
+    question: "Go to the city of the Bisontins and find the traces of one of them, famous for his exile on the islands of Jersey and Guernsey."
+    reponse: "“Victor Hugo's birthplace” is an apartment in the historic centre of Besançon where the French humanist writer Victor Hugo was born, on the first floor of 140 Grande Rue, Besançon, in the Doubs (Bourgogne-Franche-Comté)."
+  - nom: "The Meaty One"
+    question: "Traditionally smoked in a “tuyé”, it is eaten hot or cold. Originally from a village near the Swiss border, it has become an international celebrity. Find the village where it was created!"
+    reponse: "The famous Morteau sausage, from… Morteau!"
+  - nom: "The Grotto"
+    question: "This place has sheltered families for at least 50,000 years. You'll find lots of surprising things there, including a bear necropolis. Find this place! Note: you don't have to explore it in depth."
+    reponse: "The Osselle Cave (42 Route des Grottes, 25410 Roset-Fluans)."
+  - nom: "The Chasm"
+    question: "Carved out by surface water, it is the largest in Europe. It has stone, chambers, stalactites and even a small lake. Find someone who has visited it. Note: you don't have to explore it in depth."
+    reponse: "The Gouffre de Poudrey (Poudrey chasm)."
+  - nom: "The Vauban"
+    question: "It is one of those fortresses that offer a breathtaking view of the surroundings. It houses several museums. Find this place."
+    reponse: "The Citadel of Besançon."
+  - nom: "The Lords"
+    question: "Which great family from the Doubs does this coat of arms belong to? Find their mansion in a village near the Doubs river."
+    reponse: "The Lords of Neufchâtel (Baume-les-Dames)."
+  - nom: "The Wet One"
+    question: "This river was a great source of inspiration for Gustave Courbet. Find its source."
+    reponse: "The source of the Loue (25520 Ouhans)."
+  - nom: "The Peugeot"
+    question: "In the Belfort Gap, two towns share a big club… Which one? Find their training ground and learn the history of the place."
+    reponse: "Stade Auguste-Bonal (Montbéliard)."
+  - nom: "Customs"
+    question: "Can you be in France and in Switzerland at the same time? Prove it!"
+    reponse: "Anywhere along the Swiss border."
+  - nom: "The Belvoir"
+    question: "At the top of a hill, it overlooks the valley. Louis XI set it on fire in 1480… Go near this place and take a video."
+    reponse: "Château de Belvoir."
+  - nom: "The Journalist"
+    question: "My first crosses rivers. My second can be aesthetic, political or religious. My third replaces the act of weaving. My whole is a town in the Doubs. Find out as much as you can about this town and make a report."
+    reponse: "The town of Pontarlier (a French word puzzle: pont + art + lier)."
+---
+
+To complete our Franche-Comté Grand Slam, we were missing the last one in the series: the Doubs! A completely new department for our two volunteers of the day: David (space imaging engineer at CNES) and Océane (PhD student in water management)! This edition takes them to discover mountains, rivers and, of course, the local culture.
+
+Both pairs left Dijon at 8 am on 24 July and returned on the evening of 25 July, hitchhiking only.

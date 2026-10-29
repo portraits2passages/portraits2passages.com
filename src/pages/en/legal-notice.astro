@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import { Content } from '../../content/mentions-legales.en.md';
+import { t, routes } from '../../i18n';
+const tx = t('en');
+---
+<Base lang="en" alternate={routes.mentions.fr} titre={tx.mentions} description={tx.mentionsMeta}>
+  <section class="conteneur etroit section prose">
+    <h1>{tx.mentions}</h1>
+    <Content />
+  </section>
+</Base>
