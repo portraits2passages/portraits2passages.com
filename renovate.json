@@ -1,0 +1,30 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommitsDisabled"],
+  "timezone": "Europe/Paris",
+  "schedule": ["before 9am on monday"],
+  "labels": ["dépendances"],
+  "dependencyDashboard": true,
+  "prConcurrentLimit": 5,
+  "vulnerabilityAlerts": { "enabled": true, "schedule": ["at any time"], "labels": ["sécurité"] },
+  "lockFileMaintenance": { "enabled": true, "schedule": ["before 9am on the first day of the month"] },
+  "packageRules": [
+    {
+      "description": "Astro et ses paquets officiels dans une seule proposition",
+      "matchPackageNames": ["astro", "@astrojs/**"],
+      "groupName": "Astro"
+    },
+    {
+      "description": "Correctifs mineurs : fusion automatique si la construction du site réussit",
+      "matchUpdateTypes": ["patch", "minor"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    },
+    {
+      "description": "Versions majeures : toujours relues à la main",
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["dépendances", "version majeure"]
+    }
+  ]
+}
