@@ -24,5 +24,9 @@ npm run build    # site statique dans dist/
 ## Sécurité
 - Site 100 % statique : pas de serveur applicatif, pas de base de données, pas d'interface d'admin sur le site lui-même.
 - Le contenu saisi dans Pages CMS est contrôlé au build (`src/content.config.ts`) : images de `/images/` uniquement, identifiant YouTube, carte uMap en https. Le Markdown est nettoyé (`rehype-sanitize`) : pas de script, d'iframe ni de lien `javascript:`. Les liens externes des fichiers JSON doivent être en https (`src/liens.ts`).
-- En-têtes HTTP de sécurité : `public/_headers` (Cloudflare Pages / Netlify) et `public/.htaccess` (Apache / Infomaniak).
+- En-têtes HTTP de sécurité : `public/_headers` ; redirections : `public/_redirects` (format Cloudflare Pages).
 - Avant chaque mise en ligne importante : `npm audit` et mise à jour d'Astro.
+
+## Hébergement : Cloudflare Pages
+- Projet relié au dépôt GitHub : chaque modification de `main` (y compris depuis Pages CMS) est construite et publiée automatiquement ; chaque pull request obtient une adresse d'aperçu.
+- Réglages de construction : commande `npm run build`, dossier `dist`, Node selon `.nvmrc`.
