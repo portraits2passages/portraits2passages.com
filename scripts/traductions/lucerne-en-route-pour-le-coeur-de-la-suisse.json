@@ -4,17 +4,60 @@
   "chapo": "The first international edition of Portraits 2 Passages takes place in Switzerland, in the canton of Lucerne! Our two participants, Adele and Caroline, leave their home countries to discover their Swiss neighbours.",
   "corps": "Portraits 2 Passages Lucerne takes you to Switzerland, and more precisely to the canton of Lucerne! This time it's the turn of Adèle, an Italian with a passion for volcanoes, and Caroline, a French outdoor-sports enthusiast, to set off from Lausanne. On the programme: discovering the region through local sports, traditional music and singing, nature reserves, iconic monuments and food.",
   "defis": [
-    ["Babel", "Although the canton's official language is German, you may need to learn how to say “thank you” in three other languages spoken in the canton... Find them all!", "Italian: Grazie · French: Merci · Romansh: Grazia · German: Danke"],
-    ["The Mountain", "This very famous song uses a traditional Swiss singing technique: yodelling. Let us hear your lovely voice on a few of its verses.", "La Montanara is considered one of the most famous mountain songs. It is inspired by the Ladin legend of Soreghina, daughter of the Sun, although the lyrics barely mention the story and leave room instead for evoking valleys, forests and Alpine songs."],
-    ["The Net", "It's a national sport! Maybe you'll get the chance to whip the puck yourself... Present this sport!", "Hornussen is one of the three authentically Swiss national sports, the others being Schwingen (Swiss wrestling) and stone throwing. A bat-and-ball game, it appears in sources shortly after 1600 and first spread in the Emmental."],
-    ["The Cistercian Asylum", "The architecture of this former abbey is one of the most impressive examples of Baroque architecture in Switzerland. The building is now a psychiatric hospital. Find it!", "Surrounded by a beautiful park, Sankt Urban Abbey is shut off from the outside world by a high wall. It also includes three farm estates, of which Hof Neuschür is the best preserved. Sankt Urban was entirely renovated in the 13th century: the current church was built and the convent wings were rebuilt and lavishly decorated. The abbey was turned into a psychiatric clinic as early as 1873."],
-    ["The Round One", "Go and stand in front of a stone gastropod.", "The Cohons snail is a dry-stone construction used to decorate a garden. Such constructions flourished in the south of Haute-Marne during the 19th century. Around twenty have been recorded, mainly around Langres, by Alain Catherinet."],
-    ["UNESCO", "This is the country's second biosphere reserve, so it's well worth a visit: make a short video presenting the reserve!", "The UNESCO Entlebuch Biosphere covers 400 km², where you can discover, smell, touch and taste natural treasures. This regional nature park is a paradise for families. About a quarter of its area is made up of significant moorland landscapes."],
-    ["The Pious One", "It lets you cross the Reuss while admiring very old paintings... Go there!", "The Chapel Bridge (“Kapellbrücke” in German) is the oldest covered wooden bridge in Europe. Built in 1333, it was originally part of the town's fortifications. A must on any visit to Lucerne, it is one of the most photographed monuments in Switzerland. At 204 m long, it spans the Reuss, picturesquely linking the two banks of the old town."],
-    ["The Swim", "So many mountain lakes! Cold water is good for your health. Swim in at least two of them.", "Lake Lucerne · Lake Hallwil · Lake Sempach · Lake Zug · Lake Baldegg"],
-    ["Ice Age", "Travel back in time and find a mammoth and Neanderthals, somewhere in the region.", "The archaeological park in Ballwil shows how glaciers shaped the landscape and left traces still visible today. Walk the treetop trail, see the life-size mammoth up close and learn more about the lives of Neanderthal men and women in the Ice Age. “Ice Age Adventure” is a project of the Lucerne cantonal archaeology service and Lötscher Kies + Beton AG."],
-    ["Känzeli", "This platform is one of the most popular viewpoints on the Rigi and offers a breathtaking view of Lake Lucerne.", "An easy, gently sloping hiking trail leads visitors through the trees from Rigi Kaltbad to Känzeli and takes only about 15 minutes. From the viewing platform you can see the impressive Alpine massifs, the rivers flowing into Lake Lucerne and the whole Lucerne region as far as the Swiss Plateau."],
-    ["Opera", "He lived here, and this museum was set up in his former manor house in his honour. Go to this place.", "The Richard Wagner Museum is dedicated to the composer Richard Wagner and located in the Swiss city of Lucerne. After leaving Munich, Wagner took refuge in Switzerland and lived at the Tribschen manor from 1866 to 1872. There he composed Die Meistersinger von Nürnberg, the third act of Siegfried and the Siegfried Idyll, dedicated to his wife Cosima and written in honour of their son Siegfried."],
-    ["The Ascent", "What a strange lift, linking two cantons. Film it!", "The Hammetschwand Lift is an elevator between the cantons of Lucerne and Nidwalden (Switzerland), on the north face of the Bürgenstock, a peak of the Uri Alps overlooking Lake Lucerne."]
+    [
+      "Babel",
+      "Although the canton's official language is German, you may need to learn how to say “thank you” in three other languages spoken in the canton... Find them all!",
+      "Italian: Grazie · French: Merci · Romansh: Grazia · German: Danke"
+    ],
+    [
+      "The Mountain",
+      "This very famous song uses a traditional Swiss singing technique: yodelling. Let us hear your lovely voice on a few of its verses.",
+      "La Montanara is considered one of the most famous mountain songs. It is inspired by the Ladin legend of Soreghina, daughter of the Sun, although the lyrics barely mention the story and leave room instead for evoking valleys, forests and Alpine songs."
+    ],
+    [
+      "The Net",
+      "It's a national sport! Maybe you'll get the chance to whip the puck yourself... Present this sport!",
+      "Hornussen is one of the three authentically Swiss national sports, the others being Schwingen (Swiss wrestling) and stone throwing. A bat-and-ball game, it appears in sources shortly after 1600 and first spread in the Emmental."
+    ],
+    [
+      "The Cistercian Asylum",
+      "The architecture of this former abbey is one of the most impressive examples of Baroque architecture in Switzerland. The building is now a psychiatric hospital. Find it!",
+      "Surrounded by a beautiful park, Sankt Urban Abbey is shut off from the outside world by a high wall. It also includes three farm estates, of which Hof Neuschür is the best preserved. Sankt Urban was entirely renovated in the 13th century: the current church was built and the convent wings were rebuilt and lavishly decorated. The abbey was turned into a psychiatric clinic as early as 1873."
+    ],
+    [
+      "UNESCO",
+      "This is the country's second biosphere reserve, so it's well worth a visit: make a short video presenting the reserve!",
+      "The UNESCO Entlebuch Biosphere covers 400 km², where you can discover, smell, touch and taste natural treasures. This regional nature park is a paradise for families. About a quarter of its area is made up of significant moorland landscapes."
+    ],
+    [
+      "The Pious One",
+      "It lets you cross the Reuss while admiring very old paintings... Go there!",
+      "The Chapel Bridge (“Kapellbrücke” in German) is the oldest covered wooden bridge in Europe. Built in 1333, it was originally part of the town's fortifications. A must on any visit to Lucerne, it is one of the most photographed monuments in Switzerland. At 204 m long, it spans the Reuss, picturesquely linking the two banks of the old town."
+    ],
+    [
+      "The Swim",
+      "So many mountain lakes! Cold water is good for your health. Swim in at least two of them.",
+      "Lake Lucerne · Lake Hallwil · Lake Sempach · Lake Zug · Lake Baldegg"
+    ],
+    [
+      "Ice Age",
+      "Travel back in time and find a mammoth and Neanderthals, somewhere in the region.",
+      "The archaeological park in Ballwil shows how glaciers shaped the landscape and left traces still visible today. Walk the treetop trail, see the life-size mammoth up close and learn more about the lives of Neanderthal men and women in the Ice Age. “Ice Age Adventure” is a project of the Lucerne cantonal archaeology service and Lötscher Kies + Beton AG."
+    ],
+    [
+      "Känzeli",
+      "This platform is one of the most popular viewpoints on the Rigi and offers a breathtaking view of Lake Lucerne.",
+      "An easy, gently sloping hiking trail leads visitors through the trees from Rigi Kaltbad to Känzeli and takes only about 15 minutes. From the viewing platform you can see the impressive Alpine massifs, the rivers flowing into Lake Lucerne and the whole Lucerne region as far as the Swiss Plateau."
+    ],
+    [
+      "Opera",
+      "He lived here, and this museum was set up in his former manor house in his honour. Go to this place.",
+      "The Richard Wagner Museum is dedicated to the composer Richard Wagner and located in the Swiss city of Lucerne. After leaving Munich, Wagner took refuge in Switzerland and lived at the Tribschen manor from 1866 to 1872. There he composed Die Meistersinger von Nürnberg, the third act of Siegfried and the Siegfried Idyll, dedicated to his wife Cosima and written in honour of their son Siegfried."
+    ],
+    [
+      "The Ascent",
+      "What a strange lift, linking two cantons. Film it!",
+      "The Hammetschwand Lift is an elevator between the cantons of Lucerne and Nidwalden (Switzerland), on the north face of the Bürgenstock, a peak of the Uri Alps overlooking Lake Lucerne."
+    ]
   ]
 }

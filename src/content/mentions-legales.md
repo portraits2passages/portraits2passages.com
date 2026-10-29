@@ -16,21 +16,21 @@ Numéro SIRET : 93072049500017
 
 ## Hébergeur du site
 
-Ce site est hébergé par la société **Infomaniak Network SA**.
+Ce site est un site statique hébergé par la société **Cloudflare, Inc.** (service Cloudflare Pages).
 
-Siège social : Rue Eugène-Marziano 25, 1227 Les Acacias, Suisse
+Siège social : 101 Townsend St, San Francisco, CA 94107, États-Unis
 
-Téléphone : +41 22 820 35 40
+Site web : https://www.cloudflare.com
 
-Site web : https://www.infomaniak.com
+Les pages sont distribuées par le réseau mondial de Cloudflare, qui peut traiter des données techniques de connexion (adresse IP, navigateur) pour acheminer les pages et protéger le site. Cloudflare adhère au Data Privacy Framework UE–États-Unis.
 
-Infomaniak est une société de droit suisse, indépendante et neutre.
+Le nom de domaine portraits2passages.com et les adresses e-mail sont gérés par **Infomaniak Network SA**, Rue Eugène-Marziano 25, 1227 Les Acacias, Suisse (https://www.infomaniak.com).
 
-Les données générées par l'utilisation de ce site sont hébergées exclusivement en Suisse, dans les centres de données d'Infomaniak Network SA situés à Genève, garantissant ainsi une protection optimale conformément au RGPD et hors de portée du Cloud Act américain.
+Les messages envoyés via le formulaire de contact sont transmis par le service **Web3Forms** (https://web3forms.com) jusqu'à notre boîte e-mail.
 
 ## Données que nous collectons
 
-Suivant les procédures standard d'utilisation des fichiers journaux, ces fichiers enregistrent automatiquement les visites lorsque vous visitez le site web, il peut s'agir d'informations sur votre navigateur web, il peut enregistrer certains des cookies installés sur votre appareil, l'adresse IP, le FAI, le fuseau horaire et l'horodatage, les pages de référence/de sortie, le nombre de clics. Ces informations ont pour but d'analyser les tendances, d'administrer ce site web, de suivre les mouvements des utilisateurs sur ce site web et de recueillir des informations démographiques, et elles ne sont liées à aucune information permettant d'identifier une personne. En outre, lorsque vous naviguez sur le site Web, nous pouvons recueillir des informations sur les sous-pages que vous consultez.
+Comme tout site web, l'hébergeur enregistre des journaux techniques de connexion (adresse IP, navigateur, date et heure, pages demandées) nécessaires au fonctionnement et à la sécurité du site. Nous ne les utilisons pas pour suivre les visiteurs et n'utilisons aucun outil de mesure d'audience.
 
 Nous pouvons également recueillir des informations personnelles vous concernant, telles que votre nom, le nom de votre organisation/société, votre adresse, votre adresse électronique ou d'autres données personnelles si vous nous les fournissez lors de l'inscription, de l'achat, en nous contactant ou d'une autre manière. Nous ne demandons des informations personnelles que lorsque nous en avons réellement besoin pour vous fournir un service souhaité (par exemple, si vous passez une commande par le biais du site web). Nous les collectons par des moyens équitables et légaux, avec votre connaissance et votre consentement. Nous vous informons également des raisons pour lesquelles nous les recueillons et de la manière dont elles seront utilisées.
 
@@ -46,7 +46,7 @@ L’ensemble des contenus présents sur ce site (textes, images, vidéos, logos,
 
 ## Données personnelles
 
-Conformément à la réglementation européenne en matière de protection des données personnelles (RGPD), **Portraits 2 Passages Initiatives** s’engage à respecter la vie privée des utilisateurs du site. Les données collectées via le site (formulaires, cookies, etc.) sont utilisées exclusivement pour répondre aux demandes et améliorer l’expérience utilisateur. Elles ne sont en aucun cas revendues à des tiers. Vous disposez d’un droit d’accès, de rectification, de suppression ou d’opposition concernant vos données personnelles en contactant depuis la page de contact.
+Conformément à la réglementation européenne en matière de protection des données personnelles (RGPD), **Portraits 2 Passages Initiatives** s’engage à respecter la vie privée des utilisateurs du site. Les données collectées via le site (formulaire de contact) sont utilisées exclusivement pour répondre aux demandes et améliorer l’expérience utilisateur. Elles ne sont en aucun cas revendues à des tiers. Vous disposez d’un droit d’accès, de rectification, de suppression ou d’opposition concernant vos données personnelles en contactant depuis la page de contact.
 
 ## Responsabilité
 
@@ -54,12 +54,15 @@ Conformément à la réglementation européenne en matière de protection des do
 
 ## Cookies
 
-Le site utilise des cookies pour améliorer l’expérience utilisateur et analyser la fréquentation du site. En continuant à naviguer sur le site, vous acceptez l’utilisation des cookies conformément à notre politique de cookies.
+Ce site ne dépose aucun cookie de mesure d'audience ni de publicité, et n'utilise aucun outil de statistiques.
 
+Seul votre choix de thème (clair ou sombre) est enregistré dans votre navigateur (stockage local), uniquement si vous utilisez le bouton prévu à cet effet ; il n'est jamais transmis.
+
+Les vidéos YouTube ne sont chargées que si vous cliquez dessus, via le mode « confidentialité renforcée » (youtube-nocookie.com) ; YouTube (Google) peut alors déposer ses propres cookies. Les cartes des trajets sont affichées par uMap (OpenStreetMap France).
 
 ## Consentement
 
-En utilisant notre site web, vous consentez par la présente à notre politique de confidentialité et acceptez ses conditions.
+En utilisant notre site web, vous consentez à la présente politique de confidentialité. Aucun bandeau cookies n'est nécessaire, car le site ne dépose pas de cookie soumis à consentement.
 
 ## Contact
 
