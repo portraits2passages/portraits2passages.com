@@ -29,4 +29,5 @@ npm run build    # site statique dans dist/
 
 ## Hébergement : Cloudflare Pages
 - Projet relié au dépôt GitHub : chaque modification de `main` (y compris depuis Pages CMS) est construite et publiée automatiquement ; chaque pull request obtient une adresse d'aperçu.
-- Réglages de construction : commande `npm run build`, dossier `dist`, Node selon `.nvmrc`.
+- Réglages de construction : commande `npm run build`, dossier `dist`, Node selon `.nvmrc` ; configuration du Worker dans `wrangler.jsonc` (page 404).
+- Après le branchement du domaine : désactiver l'adresse `workers.dev` (Settings → Domains & Routes) pour qu'elle ne soit pas indexée.

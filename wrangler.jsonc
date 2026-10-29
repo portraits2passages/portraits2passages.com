@@ -1,0 +1,11 @@
+// Configuration Cloudflare : site 100 % statique servi depuis dist/ (pas de code serveur).
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "portraits2passages-com",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    // Adresse inconnue : afficher dist/404.html avec le code 404
+    "not_found_handling": "404-page"
+  }
+}
