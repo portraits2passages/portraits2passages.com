@@ -131,7 +131,7 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); }
 
 /* Pied de page */
 .pied { background: var(--pied); color: #fff; padding: 3rem 0 1rem; margin-top: 0; }
-.pied-in { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; }
+.pied-in { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; }
 .pied h2 { color: #fff; font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; }
 .pied ul { list-style: none; padding: 0; margin: 0; }
 .pied a { color: var(--primaire-clair); text-decoration: none; line-height: 2; }

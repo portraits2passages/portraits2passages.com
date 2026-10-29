@@ -63,10 +63,6 @@ const actif = (href: string) => href === routes.accueil[lang] ? ici === href : i
     <div class="conteneur pied-in">
       <div><img src="/images/logop2p-blanc.png" alt={site.nom} width="160" height="48" loading="lazy" /></div>
       <div>
-        <h2>{tx.menuPrincipal}</h2>
-        <ul>{nav.map(l => <li><a href={l.href}>{l.label}</a></li>)}</ul>
-      </div>
-      <div>
         <h2>{tx.suivez}</h2>
         <ul>
           {site.reseaux.map(r => <li><a href={r.url} rel="noopener">{r.nom}</a></li>)}
