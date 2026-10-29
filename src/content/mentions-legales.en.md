@@ -44,6 +44,8 @@ If you are a European resident, we are the controller of your data and you have 
 
 All content on this website (texts, images, videos, logos, graphics, icons, etc.) is protected by applicable intellectual property laws. Any reproduction, representation, modification or adaptation of this content, in whole or in part, without the prior permission of **Portraits 2 Passages Initiatives** is strictly prohibited.
 
+Home banner photo: “Route de campagne près d'Erveu”, Champniers (Vienne, France), by JLPC, licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Champniers_86_Route_de_campagne_pr%C3%A8s_Erveu_2014.jpg). Image cropped and darkened for the website.
+
 ## Personal data
 
 In accordance with European personal data protection regulations (GDPR), **Portraits 2 Passages Initiatives** is committed to respecting the privacy of the website's users. Data collected through the website (contact form) is used solely to respond to requests and improve the user experience. It is never sold to third parties. You have the right to access, rectify, delete or object to the processing of your personal data by contacting us through the contact page.

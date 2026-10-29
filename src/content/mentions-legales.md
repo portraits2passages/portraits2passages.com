@@ -44,6 +44,8 @@ Si vous êtes un résident européen, nous sommes les responsables du traitement
 
 L’ensemble des contenus présents sur ce site (textes, images, vidéos, logos, graphiques, icônes, etc.) est protégé par les lois en vigueur sur la propriété intellectuelle. Toute reproduction, représentation, modification ou adaptation, en tout ou partie, de ces contenus sans l’autorisation préalable de **Portraits 2 Passages Initiatives** est strictement interdite.
 
+Photo du bandeau d'accueil : « Route de campagne près d'Erveu », Champniers (Vienne), par JLPC, sous licence [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.fr), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Champniers_86_Route_de_campagne_pr%C3%A8s_Erveu_2014.jpg). Image recadrée et assombrie pour le site.
+
 ## Données personnelles
 
 Conformément à la réglementation européenne en matière de protection des données personnelles (RGPD), **Portraits 2 Passages Initiatives** s’engage à respecter la vie privée des utilisateurs du site. Les données collectées via le site (formulaire de contact) sont utilisées exclusivement pour répondre aux demandes et améliorer l’expérience utilisateur. Elles ne sont en aucun cas revendues à des tiers. Vous disposez d’un droit d’accès, de rectification, de suppression ou d’opposition concernant vos données personnelles en contactant depuis la page de contact.

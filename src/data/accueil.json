@@ -1,7 +1,7 @@
 {
   "mission": "Promouvoir les voyages de proximité et la solidarité en interrogeant notre relation au numérique, à l'incertitude et aux territoires, afin de renforcer notre résilience collective.",
   "questions": "Comment allier transition numérique et transition sociétale ? Comment sortir de nos bulles informationnelles et sociales ? Comment provoquer l'action par le hasard des rencontres ?\n\nAutant de questions auxquelles nous essayons de répondre à notre manière !",
-  "imageMission": "/images/1464820453369-31d2c0b651af-e5201f11.jpg",
+  "imageMission": "/images/banniere-route.jpg",
   "formations": "Montez en compétences pour appliquer les enjeux sociétaux à vos projets numériques (frontières planétaires, économie du Donut, techno-diversité, Green IT, conception responsable) ou demandez un accompagnement pour vous lancer avec les bonnes questions et pratiques dans la conception d'outils numériques responsables.\n\nRéservez votre créneau de 30 minutes pour demander des précisions et adapter la formation ou l'accompagnement à votre besoin !",
   "quiSommesNous": "Portraits 2 Passages, c’est l’aventure d’une équipe passionnée — Nicolas, Lou et Diane — unie par l’envie de découvrir le monde autrement. Ce projet est né de notre rencontre à l’Université de technologie de Troyes (UTT) en 2014, marqués par nos projets associatifs et une sensibilité à la soutenabilité et aux cultures locales.\n\nDepuis 2021, nous embarquons des participants pour explorer des territoires mal connus, à la rencontre de leurs habitants, en privilégiant l’authenticité, la spontanéité et les liens humains. Une façon de voyager qui va bien au-delà du tourisme classique.\n\nCette approche est appuyée par nos différents travaux pédagogiques et scientifiques autour de l'usage du numérique pour une transition sociétale juste, sobre et robuste.",
   "equipe": [
@@ -23,5 +23,12 @@
       "photo": "/images/equipe-diane.jpg",
       "bio": "Je développe et supervise des instruments de mesures au service de la recherche environnementale au LSCE (CEA) et je pars souvent en missions en soutien technique aux équipes de scientifiques sur le terrain."
     }
-  ]
+  ],
+  "imageCredit": {
+    "legende": "Route de campagne à Champniers (Vienne)",
+    "auteur": "JLPC",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.fr",
+    "source": "https://commons.wikimedia.org/wiki/File:Champniers_86_Route_de_campagne_pr%C3%A8s_Erveu_2014.jpg"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "mission": "Promoting local travel and solidarity by questioning our relationship with digital technology, uncertainty and places, in order to strengthen our collective resilience.",
   "questions": "How can we bring the digital transition and the societal transition together? How do we step out of our information and social bubbles? How can chance encounters spark action?\n\nThese are the questions we try to answer, in our own way!",
-  "imageMission": "/images/1464820453369-31d2c0b651af-e5201f11.jpg",
+  "imageMission": "/images/banniere-route.jpg",
   "formations": "Build your skills to apply societal challenges to your digital projects (planetary boundaries, Doughnut economics, techno-diversity, Green IT, responsible design), or ask for support to get started with the right questions and practices in designing responsible digital tools.\n\nBook a 30-minute slot to ask questions and tailor the training or support to your needs!",
   "quiSommesNous": "Portraits 2 Passages is the adventure of a passionate team — Nicolas, Lou and Diane — brought together by a desire to discover the world differently. The project was born when we met at the Université de technologie de Troyes (UTT) in 2014, shaped by our student-association projects and a sensitivity to sustainability and local cultures.\n\nSince 2021, we have been taking participants to explore little-known regions and meet the people who live there, favouring authenticity, spontaneity and human connection. A way of travelling that goes far beyond conventional tourism.\n\nThis approach is backed by our teaching and research on using digital technology for a fair, sober and robust societal transition.",
   "equipe": [
@@ -23,5 +23,12 @@
       "photo": "/images/equipe-diane.jpg",
       "bio": "I develop and oversee measuring instruments for environmental research at LSCE (CEA), and I often go on field missions to provide technical support to scientific teams."
     }
-  ]
+  ],
+  "imageCredit": {
+    "legende": "Country road in Champniers (Vienne, France)",
+    "auteur": "JLPC",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.fr",
+    "source": "https://commons.wikimedia.org/wiki/File:Champniers_86_Route_de_campagne_pr%C3%A8s_Erveu_2014.jpg"
+  }
 }

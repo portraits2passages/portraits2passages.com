@@ -73,7 +73,7 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); }
 .bouton.secondaire:hover { background: var(--bouton); border-color: var(--bouton); }
 
 /* Accueil */
-.hero { background-size: cover; background-position: center; color: #fff; padding: 6rem 0; text-align: center; }
+.hero { position: relative; background-size: cover; background-position: center 60%; color: #fff; padding: 6rem 0; text-align: center; }
 .hero h1 { color: #fff; margin: 0 0 .5rem; }
 .hero-sous-titre { font-family: var(--titres); text-transform: uppercase; letter-spacing: .1em; color: var(--primaire-clair); }
 .hero-texte { font-size: clamp(1.1rem, 2.4vw, 1.45rem); max-width: 820px; margin: 0 auto; font-family: var(--titres); }
@@ -187,3 +187,5 @@ main:focus { outline: none; }
 }
 
 .defi-image { max-width: 160px; margin: 0 1.25rem 1rem; }
+.hero-credit { position: absolute; right: .75rem; bottom: .4rem; margin: 0; font-size: .75rem; color: rgba(255,255,255,.85); }
+.hero-credit a { color: inherit; }

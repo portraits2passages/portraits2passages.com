@@ -18,6 +18,7 @@ const paragraphes = (s: string) => s.split('\n\n');
       <p class="hero-sous-titre">{tx.notreMission}</p>
       <p class="hero-texte">{accueil.mission}</p>
     </div>
+    <p class="hero-credit">{accueil.imageCredit.legende} — <a href={accueil.imageCredit.source} rel="noopener">{accueil.imageCredit.auteur}</a>, <a href={accueil.imageCredit.licenceUrl} rel="noopener license">{accueil.imageCredit.licence}</a></p>
   </section>
 
   <section class="conteneur section etroit">
