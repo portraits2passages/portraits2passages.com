@@ -1,0 +1,4 @@
+# Redirections permanentes (Cloudflare) : anciennes adresses de la page Interventions.
+# Les pages de redirection générées par Astro (astro.config.mjs) restent en secours.
+/formations     /interventions  301
+/en/training    /en/our-work    301

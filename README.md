@@ -24,7 +24,7 @@ npm run build    # site statique dans dist/
 ## Sécurité
 - Site 100 % statique : pas de serveur applicatif, pas de base de données, pas d'interface d'admin sur le site lui-même.
 - Le contenu saisi dans Pages CMS est contrôlé au build (`src/content.config.ts`) : images de `/images/` uniquement, identifiant YouTube, carte uMap en https. Le Markdown est nettoyé (`rehype-sanitize`) : pas de script, d'iframe ni de lien `javascript:`. Les liens externes des fichiers JSON doivent être en https (`src/liens.ts`).
-- En-têtes HTTP de sécurité : `public/_headers` ; redirections : `redirects` dans `astro.config.mjs` (converties en règles 301 par Cloudflare).
+- En-têtes HTTP de sécurité : `public/_headers` ; redirections 301 : `public/_redirects`.
 - Avant chaque mise en ligne importante : `npm audit` et mise à jour d'Astro.
 
 ## Hébergement : Cloudflare Pages
