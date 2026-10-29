@@ -143,12 +143,19 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); }
 .pied :focus-visible { outline-color: #fff; }
 @media (max-width: 720px) { .pied-in { flex-direction: column; text-align: center; } }
 
-/* Impression des défis : sans les réponses */
+/* Impression d'une édition : uniquement la section des défis, sans les réponses */
+.titre-impression { display: none; }
 @media print {
-  .entete, .pied, .video, .carte, .info, .imprimer, .couverture, .fil { display: none !important; }
-  .reponse { display: none !important; }
-  .defi { break-inside: avoid; }
+  body > *:not(main), .edition > *:not(.defis), .lien-evitement { display: none !important; }
+  .defis { padding: 0; max-width: none; }
+  .titre-impression { display: block; font-size: 1.1rem; color: #000; margin: 0 0 .25rem; }
+  .imprimer, .reponse { display: none !important; }
+  .defi { break-inside: avoid; border-color: #999; }
+  .defi summary { list-style: none; padding: .6rem .9rem; }
+  .defi summary::-webkit-details-marker { display: none; }
+  body { font-size: 11pt; color: #000; background: #fff; }
 }
+
 .logo { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-family: var(--titres); font-weight: 700; color: var(--titre); font-size: 1.15rem; }
 .logo img { height: 40px; width: auto; }
 

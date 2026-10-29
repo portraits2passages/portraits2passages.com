@@ -38,6 +38,7 @@ const date = d.date.toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-GB', { week
 
     {d.defis.length > 0 && (
       <section class="conteneur etroit section defis">
+        <p class="titre-impression">Portraits 2 Passages — {d.titre}</p>
         <h2>{tx.defisTitre}</h2>
         <p>{tx.defisIntro}</p>
         <button type="button" class="bouton secondaire imprimer" onclick="window.print()">{tx.imprimer}</button>
