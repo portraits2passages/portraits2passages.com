@@ -44,7 +44,7 @@ Si vous êtes un résident européen, nous sommes les responsables du traitement
 
 L’ensemble des contenus présents sur ce site (textes, images, vidéos, logos, graphiques, icônes, etc.) est protégé par les lois en vigueur sur la propriété intellectuelle. Toute reproduction, représentation, modification ou adaptation, en tout ou partie, de ces contenus sans l’autorisation préalable de **Portraits 2 Passages Initiatives** est strictement interdite.
 
-Photo du bandeau d'accueil : « Route de campagne près d'Erveu », Champniers (Vienne), par JLPC, sous licence [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.fr), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Champniers_86_Route_de_campagne_pr%C3%A8s_Erveu_2014.jpg). Image recadrée et assombrie pour le site.
+Photo du bandeau d'accueil : « Route de campagne », Vendoire (Dordogne), par JLPC, sous licence [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.fr), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Vendoire_24_Route_de_campagne_2014.jpg). Image recadrée et assombrie pour le site.
 
 ## Données personnelles
 
