@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import { routes } from '../i18n';
+---
+<Base lang="fr" alternate={routes.accueil.en} titre="Page introuvable" description="Cette page n'existe pas ou a été déplacée.">
+  <meta slot="head" name="robots" content="noindex" />
+  <section class="conteneur etroit section centre page-404">
+    <p class="code-404" aria-hidden="true">404</p>
+    <h1>Cette route ne mène nulle part</h1>
+    <p>La page que vous cherchez n'existe pas ou a été déplacée. Pas de panique : même sans GPS, on retrouve toujours son chemin.</p>
+    <p class="actions-boutons" style="justify-content:center">
+      <a class="bouton" href={routes.accueil.fr}>Retour à l'accueil</a>
+      <a class="bouton secondaire" href={routes.editions.fr}>Voir les éditions</a>
+    </p>
+    <p lang="en"><a href={routes.accueil.en}>Page not found — back to the English homepage</a></p>
+  </section>
+</Base>

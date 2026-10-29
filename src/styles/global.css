@@ -235,3 +235,4 @@ main:focus { outline: none; }
 .references strong { font-family: var(--titres); color: var(--titre); }
 .references p { margin: .25rem 0 0; color: var(--gris); }
 @media (max-width: 600px) { .references li { grid-template-columns: 1fr; gap: .25rem; } }
+.code-404 { font-family: var(--titres); font-weight: 700; font-size: clamp(5rem, 18vw, 9rem); line-height: 1; margin: 0; color: var(--soleil); }

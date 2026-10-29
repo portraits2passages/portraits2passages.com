@@ -6,3 +6,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
   X-Frame-Options: DENY
+
+# Adresses de test Cloudflare (workers.dev) : ne pas indexer dans les moteurs de recherche
+https://:sous-domaine.contact-584.workers.dev/*
+  X-Robots-Tag: noindex
