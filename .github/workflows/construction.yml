@@ -1,11 +1,10 @@
 # Construit le site sur chaque proposition de modification (dont celles de Renovate) :
 # une mise à jour qui casse la construction n'est jamais fusionnée automatiquement.
+# La branche main est construite et publiée par deploiement.yml.
 name: Construction du site
 
 on:
   pull_request:
-  push:
-    branches: [main]
 
 permissions:
   contents: read

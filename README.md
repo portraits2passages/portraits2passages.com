@@ -23,10 +23,9 @@ npm run build    # site statique dans dist/
 ## Sécurité
 - Site 100 % statique : pas de serveur applicatif, pas de base de données, pas d'interface d'admin sur le site lui-même.
 - Le contenu saisi dans Pages CMS est contrôlé au build (`src/content.config.ts`) : images de `/images/` uniquement, identifiant YouTube, carte uMap en https. Le Markdown est nettoyé (`rehype-sanitize`) : pas de script, d'iframe ni de lien `javascript:`. Les liens externes des fichiers JSON doivent être en https (`src/liens.ts`).
-- En-têtes HTTP de sécurité : `public/_headers` ; redirections 301 : `public/_redirects`.
+- Politique de sécurité (CSP) en balise `<meta>` dans `src/layouts/Base.astro` (GitHub Pages ne permet pas d'en-têtes HTTP) ; anciennes adresses redirigées par les pages générées depuis `redirects` (`astro.config.mjs`).
 - Avant chaque mise en ligne importante : `npm audit` et mise à jour d'Astro.
 
-## Hébergement : Cloudflare Pages
-- Projet relié au dépôt GitHub : chaque modification de `main` (y compris depuis Pages CMS) est construite et publiée automatiquement ; chaque pull request obtient une adresse d'aperçu.
-- Réglages de construction : commande `npm run build`, dossier `dist`, Node selon `.nvmrc` ; configuration du Worker dans `wrangler.jsonc` (page 404).
-- Après le branchement du domaine : désactiver l'adresse `workers.dev` (Settings → Domains & Routes) pour qu'elle ne soit pas indexée.
+## Hébergement : GitHub Pages
+- Le workflow `.github/workflows/deploiement.yml` construit le site et le publie à chaque modification de `main` (y compris depuis Pages CMS).
+- Domaine : `portraits2passages.com` (enregistrements DNS chez Infomaniak : 4 A, 4 AAAA vers GitHub, `www` en CNAME vers `portraits2passages.github.io`). La messagerie reste chez Infomaniak.
