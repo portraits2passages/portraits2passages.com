@@ -12,6 +12,6 @@ const editions = await getEditions(lang);
   <section class="conteneur section">
     <h1>{tx.editionsTitre}</h1>
     <!-- Toutes les éditions sur une page : les vignettes hors écran ne se chargent qu'en approchant au défilement (loading="lazy"). -->
-    <div class="grille">{editions.map((e, i) => <CarteEdition href={editionUrl(lang, e.id)} {...e.data} niveau={2} chargement={i < 3 ? 'eager' : 'lazy'} />)}</div>
+    <div class="grille">{editions.map((e, i) => <CarteEdition href={editionUrl(lang, e.id)} {...e.data} lang={lang} niveau={2} chargement={i < 3 ? 'eager' : 'lazy'} />)}</div>
   </section>
 </Base>

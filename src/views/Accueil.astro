@@ -12,16 +12,20 @@ const dernieres = (await getEditions(lang)).slice(0, 3);
 const paragraphes = (s: string) => s.split('\n\n');
 ---
 <Base lang={lang} alternate={routes.accueil[lang === 'fr' ? 'en' : 'fr']}>
-  <section class="hero" style={`background-image:linear-gradient(rgba(34,50,97,.55),rgba(34,50,97,.55)),url(${accueil.imageMission})`}>
-    <div class="conteneur">
-      <h1>Portraits 2 Passages</h1>
+  <section class="hero" style={`--hero-image:url(${accueil.imageMission})`}>
+    <div class="conteneur hero-in">
       <p class="hero-sous-titre">{tx.notreMission}</p>
+      <h1>Portraits 2 Passages</h1>
       <p class="hero-texte">{accueil.mission}</p>
+      <p class="hero-actions">
+        <a class="bouton soleil" href={routes.editions[lang]}>{tx.voirEditions}</a>
+        <a class="bouton contour" href={routes.formations[lang]}>{tx.formationsTitre}</a>
+      </p>
     </div>
     <p class="hero-credit">{accueil.imageCredit.legende} — <a href={accueil.imageCredit.source} rel="noopener">{accueil.imageCredit.auteur}</a>, <a href={accueil.imageCredit.licenceUrl} rel="noopener license">{accueil.imageCredit.licence}</a></p>
   </section>
 
-  <section class="conteneur section etroit">
+  <section class="conteneur section etroit questions">
     {paragraphes(accueil.questions).map(p => <p class="grand">{p}</p>)}
   </section>
 
@@ -35,7 +39,7 @@ const paragraphes = (s: string) => s.split('\n\n');
 
   <section class="conteneur section">
     <h2>{tx.dernieresVideos}</h2>
-    <div class="grille">{dernieres.map(e => <CarteEdition href={editionUrl(lang, e.id)} {...e.data} />)}</div>
+    <div class="grille">{dernieres.map(e => <CarteEdition href={editionUrl(lang, e.id)} {...e.data} lang={lang} />)}</div>
     <p class="centre"><a class="bouton secondaire" href={routes.editions[lang]}>{tx.toutesEditions}</a></p>
   </section>
 
