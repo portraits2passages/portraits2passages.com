@@ -14,7 +14,6 @@ npm run build    # site statique dans dist/
 - Images : `public/images/`.
 - Back-office : `.pages.yml` (Pages CMS, après dépôt sur GitHub).
 - `scripts/extraire.py` : script qui a généré les éditions à partir du HTML du site actuel.
-- Voir `inventaire.md` pour l'analyse et l'estimation.
 
 ## Reste à faire avant la mise en ligne
 - Formulaire de contact : Web3Forms, clé dans `src/data/site.json` (page `/contact` uniquement, retour sur `/merci`).

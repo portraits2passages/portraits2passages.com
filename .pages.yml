@@ -178,7 +178,6 @@ content:
       - { name: nom, label: Nom, type: string }
       - { name: slogan, label: Slogan, type: string }
       - { name: description, label: Description par défaut, type: text }
-      - { name: email, label: E-mail de contact, type: string }
       - { name: web3formsKey, label: Clé Web3Forms du formulaire de contact, type: string }
       - name: reseaux
         label: Réseaux sociaux
