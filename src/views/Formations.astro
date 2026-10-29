@@ -23,22 +23,6 @@ const f = formations(lang);
     </div>
   </section>
 
-  <section class="section fond-clair">
-    <div class="conteneur">
-      <h2>{f.formationsTitre}</h2>
-      <p>{f.formationsIntro}</p>
-      <div class="grille">
-        {f.themes.map(th => (
-          <article class="theme">
-            <img src={th.image} alt="" loading="lazy" width="480" height="300" />
-            <h3>{th.titre}</h3>
-            <p>{th.intro}</p>
-            <ul>{th.points.map(p => <li>{p}</li>)}</ul>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
 
   <section class="conteneur section">
     <h2>{f.referencesTitre}</h2>

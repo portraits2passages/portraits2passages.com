@@ -149,14 +149,6 @@ h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .imprimer { margin-bottom: 1.5rem; }
 
 /* Formations */
-.theme { background: var(--surface); border-radius: var(--rayon); overflow: hidden; box-shadow: 0 2px 12px var(--ombre); padding-bottom: 1rem; border-top: 6px solid var(--primaire); }
-.theme:nth-child(2) { border-top-color: var(--soleil); }
-.theme:nth-child(3) { border-top-color: var(--secondaire); }
-.theme img { aspect-ratio: 16/10; object-fit: cover; width: 100%; }
-.theme h3, .theme p, .theme ul { padding: 0 1.35rem; }
-.theme h3 { font-size: 1.3rem; }
-.theme ul { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; }
-.theme li { background: var(--fond-clair); border-radius: 50px; padding: .25rem .8rem; font-size: .9rem; }
 
 /* Formulaires */
 .formulaire { display: grid; gap: 1rem; }

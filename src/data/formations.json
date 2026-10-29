@@ -16,41 +16,6 @@
       "texte": "Accompagner une équipe ou une organisation dans une réflexion sur son orientation, son impact et ses dépendances numériques."
     }
   ],
-  "formationsTitre": "Formations",
-  "formationsIntro": "Des formations courtes ou des modules de cours, adaptés à votre public : étudiants, professionnels ou élus.",
-  "themes": [
-    {
-      "titre": "Systèmes Terre",
-      "image": "/images/img-11008.jpg",
-      "intro": "Compréhension des équilibres du Système Terre et des besoins humains :",
-      "points": [
-        "Frontières planétaires",
-        "Économie du Donut",
-        "Gestion des communs"
-      ]
-    },
-    {
-      "titre": "Numérique responsable",
-      "image": "/images/img-4980917.jpg",
-      "intro": "Conception et développements de services numériques responsables :",
-      "points": [
-        "Green IT vs IT for Green",
-        "Paradigme cornucopien",
-        "Sustainable Computing Environmental Framework",
-        "Communs numériques"
-      ]
-    },
-    {
-      "titre": "Sécurité informatique",
-      "image": "/images/img-1591018.jpg",
-      "intro": "Conception et utilisation d'outils numériques sûrs et fiables :",
-      "points": [
-        "Bases des principes de sécurité informatique",
-        "Fonctionnement du web sécurisé",
-        "Gestion des dépendances numériques et physiques"
-      ]
-    }
-  ],
   "referencesTitre": "Ils nous ont fait confiance",
   "references": [
     {

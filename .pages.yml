@@ -119,17 +119,6 @@ content:
         fields:
           - { name: titre, label: Titre, type: string }
           - { name: texte, label: Texte, type: text }
-      - { name: formationsTitre, label: Titre « Formations », type: string }
-      - { name: formationsIntro, label: Introduction des formations, type: text }
-      - name: themes
-        label: Thèmes de formation
-        type: object
-        list: true
-        fields:
-          - { name: titre, label: Titre, type: string }
-          - { name: image, label: Image, type: image }
-          - { name: intro, label: Introduction, type: text }
-          - { name: points, label: Points abordés, type: string, list: true }
       - { name: referencesTitre, label: Titre des références, type: string }
       - name: references
         label: Références
@@ -156,17 +145,6 @@ content:
         fields:
           - { name: titre, label: Titre, type: string }
           - { name: texte, label: Texte, type: text }
-      - { name: formationsTitre, label: Titre « Formations », type: string }
-      - { name: formationsIntro, label: Introduction des formations, type: text }
-      - name: themes
-        label: Thèmes de formation
-        type: object
-        list: true
-        fields:
-          - { name: titre, label: Titre, type: string }
-          - { name: image, label: Image, type: image }
-          - { name: intro, label: Introduction, type: text }
-          - { name: points, label: Points abordés, type: string, list: true }
       - { name: referencesTitre, label: Titre des références, type: string }
       - name: references
         label: Références
