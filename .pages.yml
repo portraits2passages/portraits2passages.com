@@ -70,7 +70,8 @@ content:
       - { name: mission, label: Mission, type: text }
       - { name: imageMission, label: Image de fond, type: image }
       - { name: questions, label: Questions, type: text }
-      - { name: formations, label: Bloc Formations, type: text }
+      - { name: actionsTitre, label: Titre du bloc Actions et formations, type: string }
+      - { name: formations, label: Texte du bloc Actions et formations, type: text }
       - { name: quiSommesNous, label: Qui sommes-nous ?, type: text }
       - name: equipe
         label: Équipe
@@ -90,7 +91,8 @@ content:
       - { name: mission, label: Mission, type: text }
       - { name: imageMission, label: Image de fond, type: image }
       - { name: questions, label: Questions, type: text }
-      - { name: formations, label: Bloc Formations, type: text }
+      - { name: actionsTitre, label: Titre du bloc Actions et formations, type: string }
+      - { name: formations, label: Texte du bloc Actions et formations, type: text }
       - { name: quiSommesNous, label: Qui sommes-nous ?, type: text }
       - name: equipe
         label: Équipe

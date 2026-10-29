@@ -31,9 +31,12 @@ const paragraphes = (s: string) => s.split('\n\n');
 
   <section class="section fond-clair">
     <div class="conteneur etroit">
-      <h2>{tx.formationsTitre}</h2>
+      <h2>{accueil.actionsTitre}</h2>
       {paragraphes(accueil.formations).map(p => <p>{p}</p>)}
-      <a class="bouton" href={routes.formations[lang]}>{tx.plusInfos}</a>
+      <p class="actions-boutons">
+        <a class="bouton" href={routes.contact[lang]}>{tx.parlonsEn}</a>
+        <a class="bouton secondaire" href={routes.formations[lang]}>{tx.voirFormations}</a>
+      </p>
     </div>
   </section>
 

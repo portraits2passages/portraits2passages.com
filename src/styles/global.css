@@ -227,3 +227,4 @@ main:focus { outline: none; }
 .defi-image { max-width: 160px; margin: 0 1.25rem 1rem; }
 .hero-credit { position: absolute; right: .75rem; bottom: .4rem; margin: 0; font-size: .75rem; color: rgba(255,255,255,.85); }
 .hero-credit a { color: inherit; }
+.actions-boutons { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
