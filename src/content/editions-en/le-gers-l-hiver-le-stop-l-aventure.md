@@ -1,8 +1,8 @@
 ---
 titre: "The Gers: winter, hitchhiking, adventure!"
 date: 2022-02-11
-description: "Paul-Émile and Éliot set off from Toulouse to discover the Gers by hitchhiking. 48 hours of encounters, landscapes and unique challenges!"
-chapo: "Paul-Émile and Éliot set off from Toulouse to discover the Gers by hitchhiking. 48 hours of encounters, landscapes and unique challenges!"
+description: "Paul-Émile and Éliot set off from Toulouse to discover the Gers by hitchhiking: 48 hours of encounters, landscapes and sporting challenges!"
+chapo: "Paul-Émile and Éliot set off from Toulouse to discover the Gers by hitchhiking. On the programme: 48 hours of encounters, landscapes and sporting challenges for these two adopted Toulousains who know little about the rural areas of southern France."
 couverture: "/images/miniature-p2p-002.jpg"
 youtube: "ajU7JHlmANA"
 carte: "https://umap.openstreetmap.fr/fr/map/p2p-002-gers_1423409"
@@ -43,6 +43,6 @@ defis:
     reponse: "Some tasting ideas in the Gers: • Anything made with duck and goose (foie gras, magret, etc.) • Lomagne white garlic (PGI) • Lectoure melon • Armagnac • Floc de Gascogne (a blend of grape must and young Armagnac) • Pousse-Rapière (an Armagnac liqueur with sparkling wine) produced by Château de Monluc in Saint-Puy"
 ---
 
-Here comes a new edition of Portraits 2 Passages with two participants whose profiles are as varied as they are intriguing: Paul-Émile, an engineer and climber from Agen, and Éliot, a PhD student and artist from Paris. Their mission? To discover a department still unknown to them: the Gers!
+Here comes the second edition of Portraits 2 Passages, with participants whose profiles are as varied as they are intriguing: Paul-Émile, an engineer and climber from Agen, and Éliot, a PhD student and artist from Paris. Their mission? To discover a department still unknown to them: the Gers!
 
-They set off from Toulouse at 8 am on Friday 11 February for a unique adventure among southerners. Their challenge? Explore the region and come back, all in under 48 hours, hitchhiking only. Encounters, landscapes and surprises guaranteed on this getaway full of discoveries!
+They set off from Toulouse at 8 am on Friday 11 February to explore the Gers and come back, all in under 48 hours, hitchhiking only. Homestay encounters, varied landscapes and surprises guaranteed on this getaway!

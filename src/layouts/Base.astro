@@ -67,18 +67,16 @@ const actif = (href: string) => href === routes.accueil[lang] ? ici === href : i
         <ul>{nav.map(l => <li><a href={l.href}>{l.label}</a></li>)}</ul>
       </div>
       <div>
-        <h2>{tx.legal}</h2>
-        <ul><li><a href={routes.mentions[lang]}>{tx.mentions}</a></li></ul>
-      </div>
-      <div>
         <h2>{tx.suivez}</h2>
         <ul>
           {site.reseaux.map(r => <li><a href={r.url} rel="noopener">{r.nom}</a></li>)}
-          <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
         </ul>
       </div>
     </div>
-    <p class="conteneur copyright">© {new Date().getFullYear()} {site.nom} — {tx.droits}</p>
+    <div class="conteneur copyright">
+      <p>© {new Date().getFullYear()} {site.nom} — {tx.droits}</p>
+      <a href={routes.mentions[lang]}>{tx.mentions}</a>
+    </div>
   </footer>
   <script is:inline>
     // Bouton de thème : aria-pressed indique si le thème sombre est actif.

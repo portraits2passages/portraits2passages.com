@@ -44,6 +44,7 @@ const date = d.date.toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-GB', { week
         {d.defis.map(x => (
           <details class="defi">
             <summary><strong>{x.nom}</strong> — {x.question}</summary>
+            {x.image && <img class="defi-image" src={x.image} alt={x.imageAlt ?? ''} loading="lazy" />}
             <p class="reponse">{x.reponse}</p>
           </details>
         ))}

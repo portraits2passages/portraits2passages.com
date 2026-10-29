@@ -10,7 +10,10 @@ const schema = z.object({
   youtube: z.string(),
   carte: z.string().url(),
   carteTexte: z.string().optional(),
-  defis: z.array(z.object({ nom: z.string(), question: z.string(), reponse: z.string() })).default([]),
+  defis: z.array(z.object({
+    nom: z.string(), question: z.string(), reponse: z.string(),
+    image: z.string().optional(), imageAlt: z.string().optional(),
+  })).default([]),
 });
 
 // Une collection par langue ; une édition traduite garde le même nom de fichier.

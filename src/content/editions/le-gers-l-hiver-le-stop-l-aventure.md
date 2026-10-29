@@ -1,8 +1,8 @@
 ---
 titre: "Le Gers, l'hiver, le stop, l'aventure !"
 date: 2022-02-11
-description: "Paul-Émile et Éliot partent découvrir le Gers en autostop depuis Toulouse. 48 heures de rencontres, paysages et défis uniques !"
-chapo: "Paul-Émile et Éliot partent découvrir le Gers en autostop depuis Toulouse. 48 heures de rencontres, paysages et défis uniques !"
+description: "Paul-Émile et Éliot partent découvrir le Gers en autostop depuis Toulouse : 48 heures de rencontres, paysages et défis sportifs !"
+chapo: "Paul-Émile et Éliot partent découvrir le Gers en autostop depuis Toulouse. Au programme : 48 heures de rencontres, paysages et défis sportifs pour ces deux toulousains adoptifs qui connaissent peu les territoires ruraux du sud de la France."
 couverture: "/images/miniature-p2p-002.jpg"
 youtube: "ajU7JHlmANA"
 carte: "https://umap.openstreetmap.fr/fr/map/p2p-002-gers_1423409"
@@ -43,6 +43,6 @@ defis:
     reponse: "Quelques idées de dégustations dans le Gers : • Tous les plats à base de canards et oies (foies gras, magrets, etc.) • L'ail blanc de Lomagne (IGP) • Le melon de Lectoure • L'armagnac • Le floc de Gascogne (mélange de moût de raisin et d'armagnac jeune) • Le Pousse-Rapière (liqueur d'armagnac et vin sauvage) produit par le Château de Monluc, à Saint-Puy"
 ---
 
-Place à une nouvelle édition de Portraits 2 Passages avec deux participants aux profils aussi variés qu’intriguants : Paul-Émile, ingénieur et grimpeur agenais, et Éliot, doctorant et artiste parisien. Leur mission ? Découvrir un département encore inconnu pour eux : le Gers !
+Place à cette deuxième édition de Portraits 2 Passages avec des participants aux profils aussi variés qu’intrigants : Paul-Émile, ingénieur et grimpeur agenais, et Éliot, doctorant et artiste parisien. Leur mission ? Découvrir un département encore inconnu pour eux : le Gers !
 
-Départ vendredi 11 février à 8h de Toulouse pour une aventure unique entre sudistes. Leur défi ? Explorer le territoire et revenir, le tout en moins de 48 heures, uniquement en autostop. Rencontres, paysages et imprévus garantis dans cette escapade riche en découvertes !
+Départ le vendredi 11 février à 8h de Toulouse pour explorer le territoire gersois et revenir, le tout en moins de 48 heures, uniquement en autostop. Rencontres chez l’habitant, paysages variés et imprévus garantis dans cette escapade !

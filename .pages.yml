@@ -29,6 +29,8 @@ content:
           - { name: nom, label: Nom du défi, type: string }
           - { name: question, label: Énigme, type: text }
           - { name: reponse, label: Réponse, type: text }
+          - { name: image, label: Image (facultative, ex. un blason), type: image }
+          - { name: imageAlt, label: Description de l'image (accessibilité), type: string }
       - { name: body, label: Récit, type: rich-text }
   - name: editions-en
     label: Éditions (anglais)
@@ -56,6 +58,8 @@ content:
           - { name: nom, label: Nom du défi, type: string }
           - { name: question, label: Énigme, type: text }
           - { name: reponse, label: Réponse, type: text }
+          - { name: image, label: Image (facultative, ex. un blason), type: image }
+          - { name: imageAlt, label: Description de l'image (accessibilité), type: string }
       - { name: body, label: Récit, type: rich-text }
   - name: accueil
     label: Page d'accueil

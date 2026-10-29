@@ -136,7 +136,8 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); }
 .pied ul { list-style: none; padding: 0; margin: 0; }
 .pied a { color: var(--primaire-clair); text-decoration: none; line-height: 2; }
 .pied a:hover { color: #fff; }
-.copyright { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; padding-top: 1rem; font-size: .85rem; color: rgba(255,255,255,.7); }
+.copyright { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; padding-top: 1rem; font-size: .85rem; color: rgba(255,255,255,.75); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .5rem 1.5rem; }
+.copyright p { margin: 0; }
 
 /* Impression des défis : sans les réponses */
 @media print {
@@ -173,3 +174,5 @@ main:focus { outline: none; }
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
   .carte-edition:hover { transform: none; }
 }
+
+.defi-image { max-width: 160px; margin: 0 1.25rem 1rem; }
