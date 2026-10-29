@@ -24,6 +24,14 @@ const f = formations(lang);
   </section>
 
 
+  <section class="section fond-clair centre">
+    <div class="conteneur etroit">
+      <h2>{tx.formationsCta}</h2>
+      <p>{tx.formationsCtaTexte}</p>
+      <a class="bouton" href={routes.contact[lang]}>{tx.parlonsEn}</a>
+    </div>
+  </section>
+
   <section class="conteneur section">
     <h2>{f.referencesTitre}</h2>
     <ol class="references">
@@ -37,13 +45,5 @@ const f = formations(lang);
         </li>
       ))}
     </ol>
-  </section>
-
-  <section class="section fond-clair centre">
-    <div class="conteneur etroit">
-      <h2>{tx.formationsCta}</h2>
-      <p>{tx.formationsCtaTexte}</p>
-      <a class="bouton" href={routes.contact[lang]}>{tx.parlonsEn}</a>
-    </div>
   </section>
 </Base>
