@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portraits2passages.com/sitemap-index.xml

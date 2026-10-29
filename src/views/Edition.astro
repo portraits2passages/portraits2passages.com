@@ -11,7 +11,7 @@ const { Content } = await render(edition);
 const d = edition.data;
 const date = d.date.toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 ---
-<Base lang={lang} alternate={traduite ? editionUrl(autre, edition.id) : routes.editions[autre]} titre={d.titre} description={d.description} image={d.couverture}>
+<Base lang={lang} alternate={traduite ? editionUrl(autre, edition.id) : routes.editions[autre]} titre={d.titre} description={d.description} image={d.couverture} publication={d.date}>
   <article class="edition">
     <header class="conteneur etroit">
       <p class="fil"><a href={routes.editions[lang]}>{tx.editionsTitre}</a> › {d.titre}</p>

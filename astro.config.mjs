@@ -11,5 +11,5 @@ export default defineConfig({
   redirects: { '/formations': '/interventions', '/en/training': '/en/our-work' },
   // Le Markdown saisi dans le CMS est nettoyé : pas de script, d'iframe ni de lien « javascript: ».
   markdown: { rehypePlugins: [rehypeSanitize] },
-  integrations: [sitemap({ filter: (page) => !page.includes('/merci') })],
+  integrations: [sitemap({ filter: (page) => !/\/(merci|en\/thank-you)$/.test(page) })],
 });

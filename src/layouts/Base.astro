@@ -5,14 +5,21 @@ import { lienSur } from '../liens';
 import { t, routes, type Lang } from '../i18n';
 import '../styles/global.css';
 
-interface Props { lang: Lang; alternate: string; titre?: string; description?: string; image?: string; }
-const { lang, alternate, titre, image = '/images/miniature.png' } = Astro.props;
+interface Props { lang: Lang; alternate: string; titre?: string; description?: string; image?: string; publication?: Date; noindex?: boolean; }
+const { lang, alternate, titre, image = '/images/miniature.png', publication, noindex = false } = Astro.props;
 const tx = t(lang);
 const description = Astro.props.description ?? tx.description;
 const autre: Lang = lang === 'fr' ? 'en' : 'fr';
 const titreComplet = titre ? `${titre} — ${tx.slogan} | ${site.nom}` : `${tx.slogan} | ${site.nom}`;
 const abs = (p: string) => new URL(p, Astro.site).href;
 const ici = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+// Données structurées (schema.org) : aident les moteurs de recherche et les IA à identifier l'association et les récits
+const organisation = { '@type': 'Organization', '@id': abs('/#organisation'), name: site.nom, url: abs('/'), logo: abs('/images/logop2p-bicolor.png'), description: tx.description, sameAs: site.reseaux.map(r => r.url) };
+const jsonld = { '@context': 'https://schema.org', '@graph': [
+  organisation,
+  { '@type': 'WebSite', '@id': abs('/#site'), name: site.nom, url: abs('/'), inLanguage: ['fr', 'en'], publisher: { '@id': organisation['@id'] } },
+  ...(publication ? [{ '@type': 'Article', headline: titre, description, image: abs(image), datePublished: publication.toISOString().slice(0, 10), inLanguage: lang, url: abs(ici), mainEntityOfPage: abs(ici), author: { '@id': organisation['@id'] }, publisher: { '@id': organisation['@id'] } }] : []),
+] };
 const nav = (['accueil', 'editions', 'formations', 'contact'] as const).map(k => ({ href: routes[k][lang], label: tx.nav[k] }));
 const actif = (href: string) => href === routes.accueil[lang] ? ici === href : ici.startsWith(href);
 ---
@@ -26,11 +33,14 @@ const actif = (href: string) => href === routes.accueil[lang] ? ici === href : i
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{titreComplet}</title>
   <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex" />}
   <link rel="canonical" href={abs(ici)} />
   <link rel="alternate" hreflang={lang} href={abs(ici)} />
   <link rel="alternate" hreflang={autre} href={abs(alternate)} />
   <link rel="alternate" hreflang="x-default" href={abs(lang === 'fr' ? ici : alternate)} />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={publication ? 'article' : 'website'} />
+  <meta property="og:url" content={abs(ici)} />
+  {publication && <meta property="article:published_time" content={publication.toISOString().slice(0, 10)} />}
   <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_GB'} />
   <meta property="og:site_name" content={site.nom} />
   <meta property="og:title" content={titre ?? site.nom} />
@@ -46,6 +56,7 @@ const actif = (href: string) => href === routes.accueil[lang] ? ici === href : i
   <script is:inline>
     try { const th = localStorage.getItem('theme'); if (th) document.documentElement.dataset.theme = th; } catch (e) {}
   </script>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />
   <slot name="head" />
 </head>
 <body>
