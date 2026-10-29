@@ -1,11 +1,11 @@
 ---
-interface Props { href: string; titre: string; description: string; couverture: string; niveau?: 2 | 3; }
-const { href, titre, description, couverture, niveau = 3 } = Astro.props;
+interface Props { href: string; titre: string; description: string; couverture: string; niveau?: 2 | 3; chargement?: 'lazy' | 'eager'; }
+const { href, titre, description, couverture, niveau = 3, chargement = 'lazy' } = Astro.props;
 const Titre = `h${niveau}`;
 ---
 <article class="carte-edition">
   <a href={href}>
-    <img src={couverture} alt="" loading="lazy" width="640" height="360" />
+    <img src={couverture} alt="" loading={chargement} decoding="async" width="640" height="360" />
     <div class="carte-edition-texte">
       <Titre>{titre}</Titre>
       <p>{description}</p>
