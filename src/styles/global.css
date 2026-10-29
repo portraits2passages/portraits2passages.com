@@ -119,11 +119,12 @@ h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .carte-edition-image { position: relative; overflow: hidden; }
 .carte-edition img { aspect-ratio: 16/9; object-fit: cover; width: 100%; transition: transform .4s; }
 .carte-edition:hover img { transform: scale(1.05); }
-.badge-annee { position: absolute; top: .75rem; left: .75rem; background: var(--soleil); color: var(--secondaire); font-family: var(--titres); font-weight: 600; font-size: .85rem; padding: .15rem .7rem; border-radius: 50px; }
 .carte-edition-texte { padding: 1.1rem 1.35rem 1.35rem; display: flex; flex-direction: column; flex: 1; }
 .carte-edition h2, .carte-edition h3 { margin: 0 0 .5rem; font-size: 1.2rem; }
 .carte-edition p { margin: 0 0 1rem; color: var(--gris); font-size: .95rem; }
-.lire { margin-top: auto; font-family: var(--titres); font-weight: 600; font-size: .95rem; color: var(--lien); }
+.carte-edition p.carte-edition-bas { margin: auto 0 0; display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.lire { font-family: var(--titres); font-weight: 600; font-size: .95rem; color: var(--lien); }
+.carte-edition time { font-size: .85rem; color: var(--gris); text-transform: capitalize; white-space: nowrap; }
 .carte-edition:hover .lire { text-decoration: underline; }
 
 /* Édition */
