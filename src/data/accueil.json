@@ -8,19 +8,19 @@
     {
       "nom": "Nicolas Burger",
       "role": "Ingénieur R&D",
-      "photo": "/images/image_2026-07-18_145924047.png",
+      "photo": "/images/equipe-nicolas.jpg",
       "bio": "Je conçois des logiciels d'analyse de données pour l'industrie à Optimistik et j'enseigne le numérique responsable et la cryptographie dans différentes institutions (Paris 1 Panthéon-Sorbonne, CNAM, UTT)."
     },
     {
       "nom": "Lou Grimal",
       "role": "Enseignante-Chercheuse",
-      "photo": "/images/image_2026-07-18_145938559.png",
+      "photo": "/images/equipe-lou.jpg",
       "bio": "J'enseigne l'Analyse de Cycle de Vie et l'informatique à l'ENSAM, et je mène des recherches sur les transitions numérique et sociétale (synergies et incompatibilités)."
     },
     {
       "nom": "Diane Pacaud",
       "role": "Ingénieure en informatique et en instrumentation scientifique",
-      "photo": "/images/image_2026-07-18_145950104.png",
+      "photo": "/images/equipe-diane.jpg",
       "bio": "Je développe et supervise des instruments de mesures au service de la recherche environnementale au LSCE (CEA) et je pars souvent en missions en soutien technique aux équipes de scientifiques sur le terrain."
     }
   ]
