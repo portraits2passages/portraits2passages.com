@@ -1,5 +1,6 @@
 ---
 import site from '../data/site.json';
+import IconeReseau from '../components/IconeReseau.astro';
 import { t, routes, type Lang } from '../i18n';
 import '../styles/global.css';
 
@@ -61,17 +62,11 @@ const actif = (href: string) => href === routes.accueil[lang] ? ici === href : i
   <main id="contenu" tabindex="-1"><slot /></main>
   <footer class="pied">
     <div class="conteneur pied-in">
-      <div><img src="/images/logop2p-blanc.png" alt={site.nom} width="160" height="48" loading="lazy" /></div>
-      <div>
-        <h2>{tx.suivez}</h2>
-        <ul>
-          {site.reseaux.map(r => <li><a href={r.url} rel="noopener">{r.nom}</a></li>)}
-        </ul>
-      </div>
-    </div>
-    <div class="conteneur copyright">
-      <p>© {new Date().getFullYear()} {site.nom} — {tx.droits}</p>
-      <a href={routes.mentions[lang]}>{tx.mentions}</a>
+      <a href={routes.accueil[lang]} class="pied-logo"><img src="/images/logop2p-blanc.png" alt="" width="32" height="32" loading="lazy" /><span>{site.nom}</span></a>
+      <ul class="reseaux" aria-label={tx.suivez}>
+        {site.reseaux.map(r => <li><a href={r.url} rel="noopener" aria-label={r.nom} title={r.nom}><IconeReseau nom={r.nom} /></a></li>)}
+      </ul>
+      <p class="copyright">© {new Date().getFullYear()} · <a href={routes.mentions[lang]}>{tx.mentions}</a></p>
     </div>
   </footer>
   <script is:inline>

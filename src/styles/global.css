@@ -129,15 +129,20 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); }
 .formulaire .case { display: flex; gap: .5rem; align-items: flex-start; font-weight: 400; }
 .formulaire button { justify-self: start; }
 
-/* Pied de page */
-.pied { background: var(--pied); color: #fff; padding: 3rem 0 1rem; margin-top: 0; }
-.pied-in { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; }
-.pied h2 { color: #fff; font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; }
-.pied ul { list-style: none; padding: 0; margin: 0; }
-.pied a { color: var(--primaire-clair); text-decoration: none; line-height: 2; }
-.pied a:hover { color: #fff; }
-.copyright { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; padding-top: 1rem; font-size: .85rem; color: rgba(255,255,255,.75); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .5rem 1.5rem; }
-.copyright p { margin: 0; }
+/* Pied de page : une seule bande compacte */
+.pied { background: var(--pied); color: rgba(255,255,255,.8); padding: 1.25rem 0; font-size: .9rem; }
+.pied-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2rem; }
+.pied a { color: #fff; text-decoration: none; }
+.pied a:hover { color: var(--primaire-clair); }
+.pied-logo { display: flex; align-items: center; gap: .6rem; font-family: var(--titres); font-weight: 600; }
+.pied-logo img { height: 32px; width: auto; }
+.reseaux { list-style: none; display: flex; gap: .5rem; margin: 0; padding: 0; }
+.reseaux a { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; }
+.reseaux a:hover { background: rgba(255,255,255,.12); }
+.copyright { margin: 0; }
+.copyright a { text-decoration: underline; text-underline-offset: 3px; }
+.pied :focus-visible { outline-color: #fff; }
+@media (max-width: 720px) { .pied-in { flex-direction: column; text-align: center; } }
 
 /* Impression des défis : sans les réponses */
 @media print {
