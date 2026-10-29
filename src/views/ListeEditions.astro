@@ -12,7 +12,7 @@ const autre = routes.editions[lang === 'fr' ? 'en' : 'fr'] + (page.currentPage >
 <Base lang={lang} alternate={autre} titre={page.currentPage > 1 ? `${tx.nav.editions} (${tx.page.toLowerCase()} ${page.currentPage})` : tx.nav.editions} description={tx.editionsDescription}>
   <section class="conteneur section">
     <h1>{tx.editionsTitre}</h1>
-    <div class="grille">{page.data.map(e => <CarteEdition href={editionUrl(lang, e.id)} {...e.data} />)}</div>
+    <div class="grille">{page.data.map(e => <CarteEdition href={editionUrl(lang, e.id)} {...e.data} niveau={2} />)}</div>
     {page.lastPage > 1 && (
       <nav class="pagination" aria-label={tx.pagination}>
         {page.url.prev && <a href={page.url.prev}>{tx.plusRecentes}</a>}

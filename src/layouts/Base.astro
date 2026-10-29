@@ -44,21 +44,21 @@ const actif = (href: string) => href === routes.accueil[lang] ? ici === href : i
   <slot name="head" />
 </head>
 <body>
+  <a class="lien-evitement" href="#contenu">{tx.evitement}</a>
   <header class="entete">
     <div class="conteneur entete-in">
       <a href={routes.accueil[lang]} class="logo"><img src="/images/logop2p-bicolor.png" alt="" width="48" height="48" /><span>{site.nom}</span></a>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menu" />
-      <label for="menu-toggle" class="menu-bouton" aria-hidden="true">☰</label>
-      <nav aria-label={tx.menuPrincipal}>
+      <button type="button" class="menu-bouton" aria-expanded="false" aria-controls="navigation"><span aria-hidden="true">☰</span> {tx.menu}</button>
+      <nav id="navigation" aria-label={tx.menuPrincipal}>
         <ul>
           {nav.map(l => <li><a href={l.href} aria-current={actif(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
           <li><a href={alternate} hreflang={autre} lang={autre} class="langue" title={tx.autreLangueLabel}>{tx.autreLangue}</a></li>
-          <li><button type="button" class="theme-bouton" aria-label={tx.theme} title={tx.theme}><span class="icone-lune" aria-hidden="true">☾</span><span class="icone-soleil" aria-hidden="true">☀</span></button></li>
+          <li><button type="button" class="theme-bouton" aria-label={tx.theme} title={tx.theme} aria-pressed="false"><span class="icone-lune" aria-hidden="true">☾</span><span class="icone-soleil" aria-hidden="true">☀</span></button></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main><slot /></main>
+  <main id="contenu" tabindex="-1"><slot /></main>
   <footer class="pied">
     <div class="conteneur pied-in">
       <div><img src="/images/logop2p-blanc.png" alt={site.nom} width="160" height="48" loading="lazy" /></div>
@@ -81,11 +81,23 @@ const actif = (href: string) => href === routes.accueil[lang] ? ici === href : i
     <p class="conteneur copyright">© {new Date().getFullYear()} {site.nom} — {tx.droits}</p>
   </footer>
   <script is:inline>
-    document.querySelector('.theme-bouton').addEventListener('click', () => {
-      const html = document.documentElement;
-      const sombre = html.dataset.theme ? html.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-      html.dataset.theme = sombre ? 'light' : 'dark';
+    // Bouton de thème : aria-pressed indique si le thème sombre est actif.
+    const html = document.documentElement, boutonTheme = document.querySelector('.theme-bouton');
+    const estSombre = () => html.dataset.theme ? html.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    boutonTheme.setAttribute('aria-pressed', String(estSombre()));
+    boutonTheme.addEventListener('click', () => {
+      html.dataset.theme = estSombre() ? 'light' : 'dark';
+      boutonTheme.setAttribute('aria-pressed', String(estSombre()));
       try { localStorage.setItem('theme', html.dataset.theme); } catch (e) {}
+    });
+    // Menu mobile
+    const entete = document.querySelector('.entete'), boutonMenu = document.querySelector('.menu-bouton');
+    boutonMenu.addEventListener('click', () => {
+      const ouvert = entete.classList.toggle('ouvert');
+      boutonMenu.setAttribute('aria-expanded', String(ouvert));
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && entete.classList.contains('ouvert')) { entete.classList.remove('ouvert'); boutonMenu.setAttribute('aria-expanded', 'false'); boutonMenu.focus(); }
     });
   </script>
 </body>

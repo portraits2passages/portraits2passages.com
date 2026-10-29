@@ -11,10 +11,11 @@ const f = t(lang).form;
   <input type="hidden" name="subject" value={f.sujet} />
   <input type="hidden" name="from_name" value={site.nom} />
   <input type="hidden" name="redirect" value={new URL(routes.merci[lang], Astro.site).href} />
-  <label>{f.nom}<input name="nom" required autocomplete="name" /></label>
-  <label>{f.email}<input type="email" name="email" required autocomplete="email" /></label>
+  <p class="mention-obligatoire">{f.obligatoires}</p>
+  <label><span>{f.nom} <span class="obligatoire" aria-hidden="true">*</span></span><input name="nom" required autocomplete="name" /></label>
+  <label><span>{f.email} <span class="obligatoire" aria-hidden="true">*</span></span><input type="email" name="email" required autocomplete="email" /></label>
   <label>{f.objet}<input name="objet" /></label>
-  <label>{f.message}<textarea name="message" rows="6" required></textarea></label>
+  <label><span>{f.message} <span class="obligatoire" aria-hidden="true">*</span></span><textarea name="message" rows="6" required></textarea></label>
   <!-- Piège à robots : case invisible, rejetée par Web3Forms si cochée -->
   <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="cache" aria-hidden="true" />
   <button type="submit" class="bouton">{f.envoyer}</button>

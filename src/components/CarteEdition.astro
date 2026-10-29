@@ -1,12 +1,13 @@
 ---
-interface Props { href: string; titre: string; description: string; couverture: string; }
-const { href, titre, description, couverture } = Astro.props;
+interface Props { href: string; titre: string; description: string; couverture: string; niveau?: 2 | 3; }
+const { href, titre, description, couverture, niveau = 3 } = Astro.props;
+const Titre = `h${niveau}`;
 ---
 <article class="carte-edition">
   <a href={href}>
     <img src={couverture} alt="" loading="lazy" width="640" height="360" />
     <div class="carte-edition-texte">
-      <h3>{titre}</h3>
+      <Titre>{titre}</Titre>
       <p>{description}</p>
     </div>
   </a>

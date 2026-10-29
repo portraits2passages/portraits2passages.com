@@ -5,7 +5,7 @@ interface Props { id: string; titre: string; lang: Lang; }
 const { id, titre, lang } = Astro.props;
 const tx = t(lang);
 ---
-<div class="video" data-id={id}>
+<div class="video" data-id={id} data-titre={titre}>
   <button type="button" aria-label={`${tx.videoLire} ${titre}`} style={`background-image:url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)`}>
     <span class="video-play" aria-hidden="true">▶</span>
   </button>
@@ -14,7 +14,13 @@ const tx = t(lang);
 <script>
   document.querySelectorAll<HTMLElement>('.video').forEach(el => {
     el.querySelector('button')?.addEventListener('click', () => {
-      el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${el.dataset.id}?autoplay=1" title="Vidéo" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${el.dataset.id}?autoplay=1`;
+      iframe.title = el.dataset.titre ?? '';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+      iframe.allowFullscreen = true;
+      el.replaceChildren(iframe);
+      iframe.focus();
     });
   });
 </script>
