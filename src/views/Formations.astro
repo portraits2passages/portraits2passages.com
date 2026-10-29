@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { t, routes, type Lang } from '../i18n';
 import { formations } from '../data/contenu';
+import { lienSur } from '../liens';
 interface Props { lang: Lang; }
 const { lang } = Astro.props;
 const tx = t(lang);
@@ -39,7 +40,7 @@ const f = formations(lang);
         <li>
           <span class="periode">{r.periode}</span>
           <div>
-            <strong>{r.lien ? <a href={r.lien} rel="noopener">{r.titre}</a> : r.titre}</strong>
+            <strong>{lienSur(r.lien) ? <a href={lienSur(r.lien)} rel="noopener">{r.titre}</a> : r.titre}</strong>
             <p>{r.detail}</p>
           </div>
         </li>

@@ -20,3 +20,9 @@ npm run build    # site statique dans dist/
 - Formulaire de contact : Web3Forms, clé dans `src/data/site.json` (page `/contact` uniquement, retour sur `/merci`).
 - Pousser sur GitHub, brancher Cloudflare Pages ou Netlify, puis connecter Pages CMS.
 - Basculer le DNS (enregistrements web uniquement : les MX/e-mails restent chez Infomaniak).
+
+## Sécurité
+- Site 100 % statique : pas de serveur applicatif, pas de base de données, pas d'interface d'admin sur le site lui-même.
+- Le contenu saisi dans Pages CMS est contrôlé au build (`src/content.config.ts`) : images de `/images/` uniquement, identifiant YouTube, carte uMap en https. Le Markdown est nettoyé (`rehype-sanitize`) : pas de script, d'iframe ni de lien `javascript:`. Les liens externes des fichiers JSON doivent être en https (`src/liens.ts`).
+- En-têtes HTTP de sécurité : `public/_headers` (Cloudflare Pages / Netlify) et `public/.htaccess` (Apache / Infomaniak).
+- Avant chaque mise en ligne importante : `npm audit` et mise à jour d'Astro.

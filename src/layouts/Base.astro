@@ -1,6 +1,7 @@
 ---
 import site from '../data/site.json';
 import IconeReseau from '../components/IconeReseau.astro';
+import { lienSur } from '../liens';
 import { t, routes, type Lang } from '../i18n';
 import '../styles/global.css';
 
@@ -64,7 +65,7 @@ const actif = (href: string) => href === routes.accueil[lang] ? ici === href : i
     <div class="conteneur pied-in">
       <a href={routes.accueil[lang]} class="pied-logo"><img src="/images/logop2p-blanc.png" alt="" width="32" height="32" loading="lazy" /><span>{site.nom}</span></a>
       <ul class="reseaux" aria-label={tx.suivez}>
-        {site.reseaux.map(r => <li><a href={r.url} rel="noopener" aria-label={r.nom} title={r.nom}><IconeReseau nom={r.nom} /></a></li>)}
+        {site.reseaux.filter(r => lienSur(r.url)).map(r => <li><a href={r.url} rel="noopener" aria-label={r.nom} title={r.nom}><IconeReseau nom={r.nom} /></a></li>)}
       </ul>
       <p class="copyright">© {new Date().getFullYear()} · <a href={routes.mentions[lang]}>{tx.mentions}</a></p>
     </div>
