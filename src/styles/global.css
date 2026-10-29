@@ -54,7 +54,7 @@ h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .cache { position: absolute; left: -9999px; }
 
 /* Titres de section : petit trait « soleil » dessous */
-.section h2:not(.carte-edition h2):not(.theme h2)::after { content: ""; display: block; width: 56px; height: 5px; border-radius: 3px; background: var(--soleil); margin-top: .6rem; }
+.section h2:not(.carte-edition h2)::after { content: ""; display: block; width: 56px; height: 5px; border-radius: 3px; background: var(--soleil); margin-top: .6rem; }
 .centre h2::after { margin-left: auto; margin-right: auto; }
 
 /* En-tête */
@@ -153,7 +153,8 @@ h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .theme:nth-child(2) { border-top-color: var(--soleil); }
 .theme:nth-child(3) { border-top-color: var(--secondaire); }
 .theme img { aspect-ratio: 16/10; object-fit: cover; width: 100%; }
-.theme h2, .theme p, .theme ul { padding: 0 1.35rem; }
+.theme h3, .theme p, .theme ul { padding: 0 1.35rem; }
+.theme h3 { font-size: 1.3rem; }
 .theme ul { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; }
 .theme li { background: var(--fond-clair); border-radius: 50px; padding: .25rem .8rem; font-size: .9rem; }
 
@@ -228,3 +229,16 @@ main:focus { outline: none; }
 .hero-credit { position: absolute; right: .75rem; bottom: .4rem; margin: 0; font-size: .75rem; color: rgba(255,255,255,.85); }
 .hero-credit a { color: inherit; }
 .actions-boutons { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+
+/* Page Actions et formations */
+.intro-page { font-size: 1.2rem; max-width: 46rem; }
+.section h2 + .grille, .section h2 + p { margin-top: 1rem; }
+.action { background: var(--surface); border-radius: var(--rayon); padding: 1.5rem 1.5rem 1.25rem; box-shadow: 0 2px 12px var(--ombre); border-left: 6px solid var(--soleil); }
+.action h3 { margin: 0 0 .5rem; font-size: 1.2rem; }
+.action p { margin: 0; }
+.references { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 1rem; }
+.references li { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; padding: 1rem 1.25rem; background: var(--surface); border-radius: 12px; box-shadow: 0 2px 10px var(--ombre); }
+.references .periode { font-family: var(--titres); font-weight: 600; color: var(--lien); }
+.references strong { font-family: var(--titres); color: var(--titre); }
+.references p { margin: .25rem 0 0; color: var(--gris); }
+@media (max-width: 600px) { .references li { grid-template-columns: 1fr; gap: .25rem; } }

@@ -1,4 +1,23 @@
 {
+  "titre": "Nos actions et formations",
+  "intro": "Nous accompagnons les organisations, les collectivités et les établissements d'enseignement qui veulent questionner leur rapport au numérique, à l'incertitude et aux limites planétaires. Chaque intervention est construite avec vous, à partir de vos enjeux.",
+  "actionsTitre": "Actions sur mesure",
+  "actions": [
+    {
+      "titre": "Conventions citoyennes",
+      "texte": "Concevoir et animer une convention citoyenne à votre échelle : tirage au sort, auditions d'experts, délibération et restitution."
+    },
+    {
+      "titre": "Ateliers de conception collaborative",
+      "texte": "Imaginer ensemble des outils, des services ou des solutions low-tech, avec les personnes qui les utiliseront."
+    },
+    {
+      "titre": "Réflexions collectives",
+      "texte": "Accompagner une équipe ou une organisation dans une réflexion sur son orientation, son impact et ses dépendances numériques."
+    }
+  ],
+  "formationsTitre": "Formations",
+  "formationsIntro": "Des formations courtes ou des modules de cours, adaptés à votre public : étudiants, professionnels ou élus.",
   "themes": [
     {
       "titre": "Systèmes Terre",
@@ -30,6 +49,39 @@
         "Fonctionnement du web sécurisé",
         "Gestion des dépendances numériques et physiques"
       ]
+    }
+  ],
+  "referencesTitre": "Ils nous ont fait confiance",
+  "references": [
+    {
+      "periode": "2024 – 2026",
+      "titre": "Organisation d'une convention scientifique sur les connaissances",
+      "detail": "« De la fabrique des connaissances à leur réception par la société civile », une initiative du Comité Docteurs d'IESF (Ingénieurs et scientifiques de France).",
+      "lien": "https://conventions.iesf.fr/convention-connaissances/home"
+    },
+    {
+      "periode": "2026",
+      "titre": "Intervention à l'école thématique doctorale MDD 2026",
+      "detail": "Institut d'études scientifiques de Cargèse (université de Corse).",
+      "lien": "https://schools.dvrc.fr/MDD26/index.php?lang=en"
+    },
+    {
+      "periode": "Février 2025",
+      "titre": "Atelier low-tech pour le Grand Chalon",
+      "detail": "Animation d'un atelier à Chalon-sur-Saône.",
+      "lien": ""
+    },
+    {
+      "periode": "Depuis 2024",
+      "titre": "Conception responsable d'outils numériques",
+      "detail": "Formation à l'université Paris 1 Panthéon-Sorbonne.",
+      "lien": ""
+    },
+    {
+      "periode": "Depuis 2024",
+      "titre": "Green IT",
+      "detail": "Formation au Conservatoire national des arts et métiers (CNAM).",
+      "lien": ""
     }
   ]
 }

@@ -109,8 +109,20 @@ content:
     path: src/data/formations.json
     format: json
     fields:
+      - { name: titre, label: Titre de la page, type: string }
+      - { name: intro, label: Introduction, type: text }
+      - { name: actionsTitre, label: Titre « Actions sur mesure », type: string }
+      - name: actions
+        label: Actions sur mesure
+        type: object
+        list: true
+        fields:
+          - { name: titre, label: Titre, type: string }
+          - { name: texte, label: Texte, type: text }
+      - { name: formationsTitre, label: Titre « Formations », type: string }
+      - { name: formationsIntro, label: Introduction des formations, type: text }
       - name: themes
-        label: Thèmes
+        label: Thèmes de formation
         type: object
         list: true
         fields:
@@ -118,14 +130,36 @@ content:
           - { name: image, label: Image, type: image }
           - { name: intro, label: Introduction, type: text }
           - { name: points, label: Points abordés, type: string, list: true }
+      - { name: referencesTitre, label: Titre des références, type: string }
+      - name: references
+        label: Références
+        type: object
+        list: true
+        fields:
+          - { name: periode, label: "Période (ex. Depuis 2024)", type: string }
+          - { name: titre, label: Titre, type: string }
+          - { name: detail, label: Détail, type: text }
+          - { name: lien, label: Lien (facultatif), type: string }
   - name: formations-en
     label: Formations (anglais)
     type: file
     path: src/data/formations.en.json
     format: json
     fields:
+      - { name: titre, label: Titre de la page, type: string }
+      - { name: intro, label: Introduction, type: text }
+      - { name: actionsTitre, label: Titre « Actions sur mesure », type: string }
+      - name: actions
+        label: Actions sur mesure
+        type: object
+        list: true
+        fields:
+          - { name: titre, label: Titre, type: string }
+          - { name: texte, label: Texte, type: text }
+      - { name: formationsTitre, label: Titre « Formations », type: string }
+      - { name: formationsIntro, label: Introduction des formations, type: text }
       - name: themes
-        label: Thèmes
+        label: Thèmes de formation
         type: object
         list: true
         fields:
@@ -133,6 +167,16 @@ content:
           - { name: image, label: Image, type: image }
           - { name: intro, label: Introduction, type: text }
           - { name: points, label: Points abordés, type: string, list: true }
+      - { name: referencesTitre, label: Titre des références, type: string }
+      - name: references
+        label: Références
+        type: object
+        list: true
+        fields:
+          - { name: periode, label: "Période (ex. Depuis 2024)", type: string }
+          - { name: titre, label: Titre, type: string }
+          - { name: detail, label: Détail, type: text }
+          - { name: lien, label: Lien (facultatif), type: string }
   - name: mentions
     label: Mentions légales
     type: file

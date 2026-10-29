@@ -1,7 +1,87 @@
 {
+  "titre": "Our workshops and training",
+  "intro": "We support organisations, local authorities and educational institutions that want to question their relationship with digital technology, uncertainty and planetary boundaries. Every session is built with you, around your own challenges.",
+  "actionsTitre": "Tailored workshops",
+  "actions": [
+    {
+      "titre": "Citizens' conventions",
+      "texte": "Designing and running a citizens' convention at your scale: random selection, expert hearings, deliberation and reporting back."
+    },
+    {
+      "titre": "Collaborative design workshops",
+      "texte": "Imagining tools, services or low-tech solutions together with the people who will use them."
+    },
+    {
+      "titre": "Collective reflection",
+      "texte": "Supporting a team or organisation as it reflects on its direction, its impact and its digital dependencies."
+    }
+  ],
+  "formationsTitre": "Training",
+  "formationsIntro": "Short courses or teaching modules, tailored to your audience: students, professionals or elected officials.",
   "themes": [
-    { "titre": "Earth systems", "image": "/images/img-11008.jpg", "intro": "Understanding the balance of the Earth system and human needs:", "points": ["Planetary boundaries", "Doughnut economics", "Managing the commons"] },
-    { "titre": "Responsible digital technology", "image": "/images/img-4980917.jpg", "intro": "Designing and developing responsible digital services:", "points": ["Green IT vs IT for Green", "The cornucopian paradigm", "Sustainable Computing Environmental Framework", "Digital commons"] },
-    { "titre": "IT security", "image": "/images/img-1591018.jpg", "intro": "Designing and using safe and reliable digital tools:", "points": ["Fundamentals of IT security", "How the secure web works", "Managing digital and physical dependencies"] }
+    {
+      "titre": "Earth systems",
+      "image": "/images/img-11008.jpg",
+      "intro": "Understanding the balance of the Earth system and human needs:",
+      "points": [
+        "Planetary boundaries",
+        "Doughnut economics",
+        "Managing the commons"
+      ]
+    },
+    {
+      "titre": "Responsible digital technology",
+      "image": "/images/img-4980917.jpg",
+      "intro": "Designing and developing responsible digital services:",
+      "points": [
+        "Green IT vs IT for Green",
+        "The cornucopian paradigm",
+        "Sustainable Computing Environmental Framework",
+        "Digital commons"
+      ]
+    },
+    {
+      "titre": "IT security",
+      "image": "/images/img-1591018.jpg",
+      "intro": "Designing and using safe and reliable digital tools:",
+      "points": [
+        "Fundamentals of IT security",
+        "How the secure web works",
+        "Managing digital and physical dependencies"
+      ]
+    }
+  ],
+  "referencesTitre": "They trusted us",
+  "references": [
+    {
+      "periode": "2024 – 2026",
+      "titre": "Organising a scientific convention on knowledge",
+      "detail": "“From the making of knowledge to its reception by civil society”, an initiative of the Doctors Committee of IESF (French engineers and scientists federation).",
+      "lien": "https://conventions.iesf.fr/convention-connaissances/home"
+    },
+    {
+      "periode": "2026",
+      "titre": "Talk at the MDD 2026 doctoral thematic school",
+      "detail": "Institute for Scientific Studies of Cargèse (University of Corsica).",
+      "lien": "https://schools.dvrc.fr/MDD26/index.php?lang=en"
+    },
+    {
+      "periode": "February 2025",
+      "titre": "Low-tech workshop for Le Grand Chalon",
+      "detail": "Workshop facilitation in Chalon-sur-Saône.",
+      "lien": ""
+    },
+    {
+      "periode": "Since 2024",
+      "titre": "Responsible design of digital tools",
+      "detail": "Course at Paris 1 Panthéon-Sorbonne University.",
+      "lien": ""
+    },
+    {
+      "periode": "Since 2024",
+      "titre": "Green IT",
+      "detail": "Course at the Conservatoire national des arts et métiers (CNAM).",
+      "lien": ""
+    }
   ]
 }

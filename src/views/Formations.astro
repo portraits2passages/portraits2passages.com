@@ -7,25 +7,59 @@ const { lang } = Astro.props;
 const tx = t(lang);
 const f = formations(lang);
 ---
-<Base lang={lang} alternate={routes.formations[lang === 'fr' ? 'en' : 'fr']} titre={tx.nav.formations} description={tx.formationsMeta}>
+<Base lang={lang} alternate={routes.formations[lang === 'fr' ? 'en' : 'fr']} titre={f.titre} description={tx.formationsMeta}>
   <section class="conteneur section">
-    <h1>{tx.formationsPageTitre}</h1>
-    <div class="grille">
-      {f.themes.map(th => (
-        <article class="theme">
-          <img src={th.image} alt="" loading="lazy" width="480" height="300" />
-          <h2>{th.titre}</h2>
-          <p>{th.intro}</p>
-          <ul>{th.points.map(p => <li>{p}</li>)}</ul>
+    <h1>{f.titre}</h1>
+    <p class="intro-page">{f.intro}</p>
+
+    <h2>{f.actionsTitre}</h2>
+    <div class="grille actions">
+      {f.actions.map(a => (
+        <article class="action">
+          <h3>{a.titre}</h3>
+          <p>{a.texte}</p>
         </article>
       ))}
     </div>
   </section>
+
   <section class="section fond-clair">
+    <div class="conteneur">
+      <h2>{f.formationsTitre}</h2>
+      <p>{f.formationsIntro}</p>
+      <div class="grille">
+        {f.themes.map(th => (
+          <article class="theme">
+            <img src={th.image} alt="" loading="lazy" width="480" height="300" />
+            <h3>{th.titre}</h3>
+            <p>{th.intro}</p>
+            <ul>{th.points.map(p => <li>{p}</li>)}</ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="conteneur section">
+    <h2>{f.referencesTitre}</h2>
+    <ol class="references">
+      {f.references.map(r => (
+        <li>
+          <span class="periode">{r.periode}</span>
+          <div>
+            <strong>{r.lien ? <a href={r.lien} rel="noopener">{r.titre}</a> : r.titre}</strong>
+            <p>{r.detail}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="section fond-clair centre">
     <div class="conteneur etroit">
       <h2>{tx.formationsCta}</h2>
       <p>{tx.formationsCtaTexte}</p>
-      <a class="bouton" href={routes.contact[lang]}>{tx.nousContacter}</a>
+      <a class="bouton" href={routes.contact[lang]}>{tx.parlonsEn}</a>
     </div>
   </section>
 </Base>
