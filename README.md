@@ -15,6 +15,6 @@ npm run build    # site statique dans dist/
 - Voir `inventaire.md` pour l'analyse et l'estimation.
 
 ## Reste à faire avant la mise en ligne
-- Créer un formulaire Formspree (ou équivalent) et renseigner `formulaireAction` dans `src/data/site.json`.
+- Formulaire de contact : Web3Forms, clé dans `src/data/site.json` (page `/contact` uniquement, retour sur `/merci`).
 - Pousser sur GitHub, brancher Cloudflare Pages ou Netlify, puis connecter Pages CMS.
 - Basculer le DNS (enregistrements web uniquement : les MX/e-mails restent chez Infomaniak).

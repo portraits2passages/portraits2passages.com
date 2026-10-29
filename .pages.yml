@@ -65,7 +65,6 @@ content:
           - { name: image, label: Image, type: image }
           - { name: intro, label: Introduction, type: text }
           - { name: points, label: Points abordés, type: string, list: true }
-      - { name: interets, label: Cases du formulaire, type: string, list: true }
   - name: mentions
     label: Mentions légales
     type: file
@@ -83,7 +82,7 @@ content:
       - { name: slogan, label: Slogan, type: string }
       - { name: description, label: Description par défaut, type: text }
       - { name: email, label: E-mail de contact, type: string }
-      - { name: formulaireAction, label: Adresse d'envoi des formulaires (Formspree…), type: string }
+      - { name: web3formsKey, label: Clé Web3Forms du formulaire de contact, type: string }
       - name: reseaux
         label: Réseaux sociaux
         type: object

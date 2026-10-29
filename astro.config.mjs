@@ -6,5 +6,5 @@ export default defineConfig({
   // Mêmes URL que le site actuel (/editions, /contact…) : pas de slash final.
   trailingSlash: 'never',
   build: { format: 'file' },
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (page) => !page.includes('/merci') })],
 });

@@ -1,21 +1,17 @@
 ---
 import site from '../data/site.json';
-interface Props { sujet: string; interets?: string[]; objet?: boolean; }
-const { sujet, interets, objet = false } = Astro.props;
+// Envoi via Web3Forms : les messages arrivent sur l'adresse liée à la clé (contact@portraits2passages.com).
 ---
-<form class="formulaire" action={site.formulaireAction} method="POST">
-  <input type="hidden" name="_subject" value={sujet} />
+<form class="formulaire" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value={site.web3formsKey} />
+  <input type="hidden" name="subject" value="Contact depuis le site" />
+  <input type="hidden" name="from_name" value={site.nom} />
+  <input type="hidden" name="redirect" value={new URL('/merci', Astro.site).href} />
   <label>Nom complet<input name="nom" required autocomplete="name" /></label>
   <label>E-mail<input type="email" name="email" required autocomplete="email" /></label>
-  {objet && <label>Objet<input name="objet" /></label>}
-  {interets && (
-    <fieldset>
-      <legend>Vos intérêts pour nos formations</legend>
-      {interets.map(i => <label class="case"><input type="checkbox" name="interets" value={i} /> {i}</label>)}
-    </fieldset>
-  )}
+  <label>Objet<input name="objet" /></label>
   <label>Message<textarea name="message" rows="6" required></textarea></label>
-  <!-- Piège à robots (honeypot) à la place du captcha -->
-  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="cache" aria-hidden="true" />
+  <!-- Piège à robots : case invisible, rejetée par Web3Forms si cochée -->
+  <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="cache" aria-hidden="true" />
   <button type="submit" class="bouton">Envoyer le message</button>
 </form>
