@@ -17,7 +17,7 @@ npm run build    # site statique dans dist/
 
 ## Reste à faire avant la mise en ligne
 - Formulaire de contact : Web3Forms, clé dans `src/data/site.json` (page `/contact` uniquement, retour sur `/merci`).
-- Pousser sur GitHub, brancher Cloudflare Pages ou Netlify, puis connecter Pages CMS.
+- Le site est publié automatiquement sur GitHub Pages à chaque envoi sur main ; connecter Pages CMS pour l’édition.
 - Basculer le DNS (enregistrements web uniquement : les MX/e-mails restent chez Infomaniak).
 
 ## Sécurité
