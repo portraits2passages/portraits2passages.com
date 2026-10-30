@@ -16,13 +16,13 @@ SIRET number: 93072049500017
 
 ## Website host
 
-This is a static website hosted by **Cloudflare, Inc.** (Cloudflare Pages service).
+This is a static website hosted by **GitHub, Inc.** (GitHub Pages service).
 
-Registered office: 101 Townsend St, San Francisco, CA 94107, United States
+Registered office: 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States
 
-Website: https://www.cloudflare.com
+Website: https://github.com
 
-Pages are delivered through Cloudflare's global network, which may process technical connection data (IP address, browser) to deliver the pages and protect the website. Cloudflare participates in the EU–US Data Privacy Framework.
+GitHub may process technical connection data (IP address, browser) to deliver the pages and protect the website. GitHub participates in the EU–US Data Privacy Framework.
 
 The portraits2passages.com domain name and email addresses are managed by **Infomaniak Network SA**, Rue Eugène-Marziano 25, 1227 Les Acacias, Switzerland (https://www.infomaniak.com).
 

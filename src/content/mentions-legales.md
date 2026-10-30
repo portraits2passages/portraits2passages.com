@@ -16,13 +16,13 @@ Numéro SIRET : 93072049500017
 
 ## Hébergeur du site
 
-Ce site est un site statique hébergé par la société **Cloudflare, Inc.** (service Cloudflare Pages).
+Ce site est un site statique hébergé par la société **GitHub, Inc.** (service GitHub Pages).
 
-Siège social : 101 Townsend St, San Francisco, CA 94107, États-Unis
+Siège social : 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis
 
-Site web : https://www.cloudflare.com
+Site web : https://github.com
 
-Les pages sont distribuées par le réseau mondial de Cloudflare, qui peut traiter des données techniques de connexion (adresse IP, navigateur) pour acheminer les pages et protéger le site. Cloudflare adhère au Data Privacy Framework UE–États-Unis.
+GitHub peut traiter des données techniques de connexion (adresse IP, navigateur) pour acheminer les pages et protéger le site. GitHub adhère au Data Privacy Framework UE–États-Unis.
 
 Le nom de domaine portraits2passages.com et les adresses e-mail sont gérés par **Infomaniak Network SA**, Rue Eugène-Marziano 25, 1227 Les Acacias, Suisse (https://www.infomaniak.com).
 
